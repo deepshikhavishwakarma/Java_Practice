@@ -1,19 +1,18 @@
-package CodePractice.Codeday3;
+package CodePractice.Codeday3_Patterns;
 
-public class Pattern18 {
+public class Pattern17 {
   public static void main(String[] args) {
-
+    
     for (int i = 1; i <= 5; i++) {
-      int a = i;
       for (int j = i; j <= 5; j++) {
         System.out.print("  ");
       }
       for (int j = 1; j <= i; j++) {
-        System.out.print(a-- + " ");
+        System.out.print(j + " ");
       }
 
       System.out.println();
-
+      
     }
   }
 }

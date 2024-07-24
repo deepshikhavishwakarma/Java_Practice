@@ -1,4 +1,4 @@
-package CodePractice.Codeday3;
+package CodePractice.Codeday3_Patterns;
 
 public class Pattern8 {
   public static void main(String[] args) {
