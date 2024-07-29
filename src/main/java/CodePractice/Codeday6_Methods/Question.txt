@@ -1,0 +1,106 @@
+Que->
+________________
+Write a Java method to find the smallest number among three numbers.
+by creating a method writing the logic inside the method and by calling a method: 
+
+Test Data:
+Input the first number: 25
+Input the Second number: 37
+Input the third number: 29
+
+Expected Output:
+The smallest value is 25
+
+Methods:
+-------------
+name : findSmallest
+returnType : void 
+methodType : static
+parameterType: No argument
+
+Note: [Take the test data value as the local variable inside the method as int type]
+---------------------------------------------------------------------------------
+Que->
+______________
+Write a Java method to compute the average of three numbers,
+by creating a method writing the logic inside the method and by calling a method: 
+
+Test Data:
+Input the first number: 25.0
+Input the second number: 45.0
+Input the third number: 65.0
+
+Expected Output:
+The average value is 45.0
+
+Methods:
+-------------
+name : findAverage 
+returnType : void 
+methodType : static
+parameterType: No argument
+
+Note: [Take the test data value as the local variable inside the method as float type]
+-------------------------------------------------------------------------------------
+Que->
+____________________
+Write a Java method to compute the sum of digits in an integer.
+by creating a method writing the logic inside the method and by calling a method: 
+
+Test Data:
+Input an integer: 25
+
+Expected Output:
+The sum is 7 
+
+Methods:
+-------------
+name : numberSum 
+returnType : void 
+methodType : static
+parameterType: No argument
+
+Note: [Take the test data value as the local variable inside the method as int type]
+-----------------------------------------------------------------------------------
+Que->
+_____________________
+Write a Java method to check whether a year (integer) entered by the user
+is a leap year or not.
+by creating a method writing the logic inside the method and by calling a method: 
+
+Input a year: 2017 
+
+Expected Output:
+false
+
+Methods:
+-------------
+name : findLeapYear
+returnType : void 
+methodType : static
+parameterType: No argument
+
+Note: [Take the test data value as the local variable inside the method as long type]
+-----------------------------------------------------------------------------------
+Que->
+_____________________
+Write Java methods to calculate triangle area.
+by creating a method writing the logic inside the method and by calling a method: 
+
+Expected Output:
+
+Input Side-1: 10.00                                                                           
+Input Side-2: 15.00                                                                             
+Input Side-3: 20.00    
+
+The area of the triangle is 72.6184377413890
+
+Methods:
+-------------
+name : findLeapYear
+returnType : void 
+methodType : static
+parameterType: No argument
+
+Note: [Take the test data value as the local variable inside the method as double type]
+-----------------------------------------------------------------------------------------
