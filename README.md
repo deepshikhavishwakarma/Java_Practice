@@ -35,10 +35,10 @@ Contributions are welcome! If you have suggestions, improvements, or additional 
 
 ## 📜 License
 
-This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. For more details, see the `[LICENSE](LICENSE)` file.
 
 ## 📬 Connect with Me
 
-Have questions, suggestions, or just want to connect? Reach out to me on [GitHub](https://github.com/deepshikhavishwakarma).
+Have questions, suggestions, or just want to connect? Reach out to me on `[GitHub](https://github.com/deepshikhavishwakarma)`.
 
 Thank you for visiting my repository. Happy coding! 😊
