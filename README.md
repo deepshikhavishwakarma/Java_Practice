@@ -7,7 +7,7 @@ To explore the solutions:
 3. Review the solution in `Filename.java`. (Solution)
 
    Here's how the structure looks:
-
+ ```plaintext
    Java-Practice/src/main/java/CodePractice
    ├── Codeday1/
    │ ├── Question.txt
@@ -24,7 +24,7 @@ To explore the solutions:
    │ └── Solution1.java
    │ └── Solution2.java
    │ └── Solution3.java
-
+...
 Feel free to clone the repository and try solving the problems on your own before checking my solutions.
 
 ## 🤝 Contributing
