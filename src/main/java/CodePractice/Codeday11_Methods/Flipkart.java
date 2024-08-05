@@ -3,8 +3,17 @@ package CodePractice.Codeday11_Methods;
 import java.util.*;
 
 public class Flipkart {
+  static void deposit(String product, String companyName, int quantity, double price) {
+    double total_amt = 0;
+    double tp = price * quantity;
+    total_amt = tp - (tp * 0.1);// finding discount here
+
+    bill(product, companyName, quantity, total_amt);
+  }
 
   public static void clothes(String product, String companyName, String type, int quantity) {
+    type = type.toLowerCase();
+    companyName = companyName.toLowerCase();
     if ((type.equals("tshirt") || type.equals("shoes")) && companyName.equals("nike")
         || companyName.equals("reebok")) {
       buyNowforClothes(product, companyName, type, quantity);
@@ -17,41 +26,35 @@ public class Flipkart {
     double price = 0, total_amt = 0;
     System.out.println("\n---------------------Clothes Or Shoes---------------------\n");
     if (companyName.equals("nike")) {
-      if (type.equals("shoes")) {
+      if (type.equals("shoes")) {// a
         price = 6000;
-        System.out.println("The Cost of Shoes is            " + price + "\nDiscount is                     10%");
-        double tp = price * quantity;
-        total_amt = tp - (tp * 0.1);// finding discount here
-        System.out.println("The type of the product         " + type.toUpperCase());
-        bill(product, companyName, quantity, total_amt);
+        System.out.println("The Cost of Shoes is\t\t\t" + price + "\nDiscount is\t\t\t\t\t\t10%");
+        System.out.println("The type of the product\t\t\t" + type.toUpperCase());
+        deposit(product, companyName, quantity, price);
 
       } else if (type.equals("tshirt")) {
         price = 4000;
-        System.out.println("The Cost of T-shirt is          " + price + "\nDiscount is                     20%");
-        double tp = price * quantity;
-        total_amt = tp - (tp * 0.1);// finding discount here
-        System.out.println("The type of the product         " + type.toUpperCase());
-        bill(product, companyName, quantity, total_amt);
+        System.out.println("The Cost of T-shirt is\t\t\t" + price + "\nDiscount is\t\t\t\t\t\t20%");
+        System.out.println("The type of the product\t\t\t" + type.toUpperCase());
+        deposit(product, companyName, quantity, price);
+
       } else {
         System.out.println("This Product of nike brand is not available.");
       }
 
     } else if (companyName.equals("reebok")) {
-      if (type.equals("shoes")) {
+      if ((type.equals("shoes")) || (type.equals("Shoes"))) {
         price = 8000;
-        System.out.println("The Cost of Reebok Shoes is     " + price + "\nDiscount is                     10%");
-        double tp = price * quantity;
-        total_amt = tp - (tp * 0.1);// finding discount here
-        System.out.println("The type of the product         " + type.toUpperCase());
-        bill(product, companyName, quantity, total_amt);
+        System.out.println("The Cost of Reebok Shoes is\t\t" + price + "\nDiscount is\t\t\t\t\t\t10%");
+        System.out.println("The type of the product\t\t\t" + type.toUpperCase());
+        deposit(product, companyName, quantity, price);
 
-      } else if (type.equals("tshirt")) {
+      } else if ((type.equals("tshirt")) || (type.equals("Tshirt"))) {
         price = 4000;
-        System.out.println("The Cost of T-shirt is          " + price + "\nDiscount is                     20%");
-        double tp = price * quantity;
-        total_amt = tp - (tp * 0.1);// finding discount here
-        System.out.println("The type of the product         " + type.toUpperCase());
-        bill(product, companyName, quantity, total_amt);
+        System.out.println("The Cost of T-shirt is\t\t\t" + price + "\nDiscount is\t\t\t\t\t\t20%");
+        System.out.println("The type of the product\t\t\t" + type.toUpperCase());
+
+        deposit(product, companyName, quantity, price);
       } else {
         System.out.println("This Product of nike brand is not available.");
       }
@@ -76,17 +79,12 @@ public class Flipkart {
     System.out.println("\n---------------------Phone---------------------\n");
     if (companyName.equals("apple")) {
       price = 60000;
-      System.out.println("The Cost of Iphone is           " + price + "\nDiscount is                     10%");
-      double tp = price * quantity;
-      total_amt = tp - (tp * 0.1);// finding discount here
-      bill(product, companyName, quantity, total_amt);
-
+      System.out.println("The Cost of Iphone is\t\t\t" + price + "\nDiscount is\t\t\t\t\t\t10%");
+      deposit(product, companyName, quantity, price);
     } else if (companyName.equals("samsung")) {
       price = 30000;
-      System.out.println("\nThe Cost of Samsung mobile is   30000\nDiscount is                     20%\n");
-      double tp = price * quantity;
-      total_amt = tp - (tp * 0.2);
-      bill(product, companyName, quantity, total_amt);
+      System.out.println("\nThe Cost of Samsung mobile is   30000\nDiscount is\t\t\t\t\t\t20%");
+      deposit(product, companyName, quantity, price);
 
     } else {
       System.out.println("Product is out of stock.");
