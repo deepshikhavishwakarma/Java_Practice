@@ -32,18 +32,23 @@ display a message "Not a letter".
 
 
 -------------------------------------------------------------------------------------------------------------------
-Ques
-1
+Ques 1
 -------------
 Write a method which can find the sum of the first n prime numbers. Prime numbers are numbers which have only 1 and the number itself as its factors.
+
 2 is the only even prime number. 1 is neither prime nor composite.
 Example: the 1st 5 prime numbers are 2,3,5,7,11 and sum is 28
 Method Name : getPrimeSum
 Method Description :Get the sum of the first n prime numbers and return its sum.
 Argument : int n
 Return Type : int
-Ques
-2
+
+Solution - PrimeSum.java
+
+
+
+-------------
+Ques 2
 -------------
 Define a method which accepts 3 values as number and checks and returns the name of the type of triangle generated.
 Write the method with the following specifications:
@@ -56,8 +61,10 @@ Values must not be 0. If yes, then return -1 as string.
 Values must not be negative. If yes, then return -2 as string.
 Sum of two sides must be greater than the third side. If no, then return -3 as string
 If it’s a triangle with valid sides, then return as string whether the triangle formed is EQUILATERAL, ISOSCELES or SCALENE.
-Ques
-3
+
+Solution - TriangleType.java
+-----------
+Ques 3
 -----------
 Define a method which accepts 2 values as number and returns the prime numbers between the values.
 Write the method with the following specifications:
@@ -69,8 +76,9 @@ Specifications: The value returned by the method getPrimeNumbers() is determined
 Value must not be negative. If yes, then return -1 as string.
 1st value must not be greater than or equal to 2nd value. If yes, then return -2 as string.
 Prime Numbers must be returned as one string with every value separated by single blank space.
-Ques
-4
+
+-----------
+Ques 4
 ------------
 Write a Java program to check whether a number is a Pronic or Heteromecic Number or not.
 A pronic number is a number which is the product of two consecutive integers, that is, a number of the form n(n + 1).
@@ -90,12 +98,11 @@ Logic: This method returns Boolean result based on the number is pronic or not.
 Expected Output
 Input a number : 110
 Pronic Number: true
+Solution - Pronic.java
 
 
-
-
-Ques
-5
+-----------
+Ques 5
 -----------
 Define a method which accepts 2 values as number and returns the even numbers between the 2 values.
 Write the method with the following specifications
@@ -112,6 +119,8 @@ Input: 10 20
 Output: 10 12 14 16 18 20
 Input: 20 10
 Output: 10 12 14 16 18 20
+
+Solution - PrintEven.java
 
 Ques
 6
@@ -137,3 +146,5 @@ parameters: int start, int end
 modifiers: static, public
 return type :String
 Logic: This method returns all perfect numbers in a String format with single space as a separator.
+
+Solution - CheckPerfectAbundant.java
