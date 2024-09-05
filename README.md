@@ -8,7 +8,7 @@ Open Question.txt to read the problem statement.
 Review the solution in Filename.java. (Solution)
 
 Here's how the structure looks:
-
+```plaintext
   Java-Practice/src/main/java/CodePractice
   ├── Codeday1/
   │ ├── Question.txt
