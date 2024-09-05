@@ -1,0 +1,205 @@
+Question-1
+-------------
+Programming Question: Student Class with Grade Calculation
+
+ Design a Java class named Student that encapsulates information about students, including name, ID, course, fee, grade, and average. Your class should include a constructor for creating a student object by copying another student object and a method to calculate the grade based on the average.
+
+Take a  Student class  (BLC Class)
+
+should have the following elements:
+
+Attributes/properties/varriables :
+
+
+Names            data type
+------------        ---------------
+Name                  : String
+ID                    : int
+Course              : String
+Fee                : double
+Grade            : char
+Average            : double
+
+Acess Modifier     :private(for all Varriables)
+
+Constructors:
+
+A parameterized constructor that initializes a student object with basic information, such as name, ID, course, and fee.
+
+A parameterized constructor that initializes a student object by copying another student object.(copy constructor)
+
+
+Method:
+
+Method Name    : calculateGrade()
+Access modifier : public
+Return Type       : char
+
+that initialize the grade of a student based on the average. Use the following grading scale:
+
+A: Average >= 90
+B: Average >= 80
+C: Average >= 70
+D: Average >= 60
+F: Average < 60
+
+
+Tester Class:(ELC Class)
+
+In the main method, demonstrate the usage of the Student class by creating instances with different constructors, setting average values, and calculating grades.
+
+
+Test Case-1 :
+---------------
+ Valid Case:
+
+ Average = 76
+
+ Sample Input: average = 76
+
+Expected Output: "Grade for average 76: C"
+
+
+Test Case-2 :
+---------------
+
+Valid Case: Average = 58
+
+Sample Input: average = 58
+
+Expected Output: "Grade for average 58: F"
+
+Test Case-3 :
+----------------
+Invalid Case: mark = -10
+
+Input: mark = -10
+Expected Output: "Error: Average mark must be between 0 and 100."
+
+
+
+
+Question-2
+--------------
+
+A class called Customer is given to you.
+
+The task is to find the Applicable Credit card Type and create CardType object based on the Credit Points of a customer.
+
+Define the following for the class.
+
+Attributes :
+
+    customerName : String,private
+
+    creditPoints: int,private
+
+Constructor :
+
+    parameterizedConstructor: for both cusotmerName & creditPoints in that order.
+
+
+Methods :
+
+    Name of the method : getCreditPoints
+
+    Return Type : int
+
+    Modifier  : public
+
+    Task : This must return creditPoints
+
+
+
+    Name of the method : display
+
+    Return type : String
+
+    Task : return only customerName from this.
+
+
+Create another class called CardType. Define the following for the class
+
+
+Attributes :
+
+    customer : Customer, private
+
+    cardType : String, private
+
+Constructor :
+
+    parameterizedConstructor: for customer and cardType attributes in that order
+
+
+
+Methods :
+
+    Name of the method : display.
+
+    Return type : String
+
+    Modifier : public
+
+    Task : Return the string in the following format.
+
+        The Customer 'Rajeev' Is Eligible For 'Gold' Card.
+
+
+Create One more class by name CardsOnOffer and define the following for the class.
+
+
+
+Method :
+
+    Name Of the method : getOfferedCard
+
+    Return type : CardType
+
+    Modifiers: public,static
+
+    Arguments: Customer object
+
+    Task :     Create and return a CardType object after logically finding Grade from creditPoints as per the below rules.
+
+        Marks         Grade
+
+        100 - 500  -  Silver
+
+        501 - 1000 -  Gold
+
+        1001 >    -  Platinum
+
+        < 100    -  EMI
+
+Take a  Main class(ELC Class) and instantiate the object and execute the methods.
+
+Test cases :
+--------------
+case-1
+--------
+Sample Input :
+
+Customer: Rajeev
+Credit Points: 600
+
+Expected output:
+The Customer 'Rajeev' Is Eligible For 'Gold' Card.
+
+case-2
+---------
+Sample Input :
+
+Customer: Alice
+Credit Points: 100
+
+Expected Output:
+The Customer 'Alice' Is Eligible For 'Silver' Card.
+
+case-3
+---------
+Customer: Bob
+Credit Points: -50
+
+Expected Output:
+Invalid input. Credit Points must be a non-negative number.

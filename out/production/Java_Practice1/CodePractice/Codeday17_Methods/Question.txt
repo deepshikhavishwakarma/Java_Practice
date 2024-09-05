@@ -1,0 +1,218 @@
+Ques - 1
+---------------
+A BLC class named as Bank is given in which you need to write the code for performing
+ the withdrawal and deposit process and also Checking current balance and displayDetail of
+ the BankAccount (BlC class)
+
+class BankAccount:
+======================
+ Instance variable
+ bankName:String, private
+ bankCustomerName:String, private
+ bankAddress:String, private
+ bankIFSCCode:Stirng, private
+ customerAccountNumber:long, private
+ currentBalance:double, private
+
+ -------------------------------------------------------------
+
+ This BankAccount class will contain 5 public methods with the following specifications :-
+
+ --------------------------------------------------------------
+
+ 1. Name of method : setDetails
+
+ Arguments : 6 parameters
+ Access modifier : public
+ [bankName,bankCustomerName,bankAddress,bankIFSCCode,customerAccountNumber,currentBalance]
+ Return Type : void
+ Access Modifiers: public
+
+ --------------------------------------------------------------
+
+ 2. Name of method : withdraw
+
+ Arguments : double amount
+ Return Type : void
+ Access Modifiers: public
+
+ Rules on this Withdraw method:-
+ In the account, Rs.1000 is the minimum balance to be maintained.
+ If current balance is Rs.1000 or below, then print InsufficientBalance from the method.
+ While withdrawing, if the remaining current balance goes less than Rs.1000, then print
+ Maintain MinimumBalance message from the method.
+
+ While withdrawing, if the remaining current balance is Rs.1000 or above, then print in the
+ following manner from the method:-
+
+ Transaction Successful.
+ Available Balance : Rs.1000.0
+
+ --------------------------------------------------
+
+ 3. Name of method : deposit
+ Arguments : double amount
+ Return Type : void
+ Access Modifiers: public
+ Rules on this deposit method:-
+
+ In the account, Rs.1000 is the minimum balance to be maintained.
+ After deposit from here only call the currentBalance Method which will show the Updated
+ BALANCE in the following manner from the method:-
+ For Example : you are trying to deposit 2000  in your account and current balance is
+ 1000 so the output should be
+
+ Deposited Successfully .
+ Available Balance : Rs.3000.0
+
+ --------------------------------------------------
+
+ 4. Name of method : CurrentBalance
+
+ Arguments : No Argument
+ Return Type : void
+ Access Modifiers: public
+ This Method print the Current balance
+
+ -------------------------------------------------
+
+ 5. Name of method : displayDetails
+
+ Arguments : No Argument
+ Return Type : String
+ Access Modifiers: public
+
+this method will return the BankAccount details int following string format:
+
+  "BankAccount[Bank Name: ICICI, Customer Name: Vijay Kumar, Address: Ameerpet, IFSC: ICICI00012,  Account Number: 324333323333, Balance: 3000]"
+ -------------------------------------------------
+
+
+ ELC Class
+ -------------------------------------------------
+
+ An ELC class OnlineBanking is given to you, call the method and perform the Operation
+
+ [Input you have to take from the Scanner class and use switch case to execute all operation]
+
+
+
+Example:
+
+
+
+Input 1: 
+
+BankName: ICICI
+
+CustomerName: Ravi Kumar
+
+Address: Ameerpet
+
+IFSC Code: ICICI004303
+
+Account Number: 324333323
+
+Balance: 3033
+
+
+
+Output 1:
+
+Enter 1 for balance enquiry
+
+Enter 2 for withdraw amount
+
+Enter 3 for deposit
+
+Enter 4 for display customer details
+
+2
+
+Please enter withdraw amount
+
+500
+
+Transaction Successful.
+
+Available Balance : 2533
+
+Output 2:
+
+Enter 1 for balance enquiry
+
+Enter 2 for withdraw amount
+
+Enter 3 for deposit
+
+Enter 4 for display customer details
+
+3
+
+Please enter deposit amount
+
+398
+
+Deposited Successfully.
+
+Available Balance: 3431
+
+
+
+Output3:
+
+Enter 1 for balance enquiry
+
+Enter 2 for withdraw amount
+
+Enter 3 for deposit
+
+Enter 4 for display customer details
+
+4
+
+BankAccount[Bank Name: ICICI, Customer Name: Ravi Kumar, Address: Ameerpet, Account Number: 324333323, Balance: 3033]
+
+
+
+Output4:
+
+Enter 1 for balance enquiry
+
+Enter 2 for withdraw amount
+
+Enter 3 for deposit
+
+Enter 4 for display customer details
+
+1
+
+Available Balance: 3033
+
+
+======================================================================================================================================
+Q5)
+Employee Data, num of projects and increment salary based on number of projects
+
+Create a BLC class Employee class with properties 
+
+private String firstName
+private String lastName
+private int employeeId
+private double salary
+private int noOfProject
+
+
+Create a setEmployeeData() method with 5 parameters to initialize all 
+the instance variables.
+
+
+Implement calculateSalary() method that will add extra amount in salary based on NoOfProject by using following criteria.
+
+NoOfProject is more than 5 and less that 10 then add 5000.
+NoOfProject is more than 10 and less that 20 then add 10000.
+NoOfProject is more than 20 then add 15000. 	
+
+Develop the display method in Employee class to display employee details.
+
+Take an ELC class Tester to test your logic by creating object Of Employee class..

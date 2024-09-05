@@ -1,0 +1,545 @@
+Ques 1-------------Guess the output.
+class D {
+  static int x = 10;
+
+public static void m1() {
+int x = 20;
+System.out.println(x);
+System.out.println(D.x);
+}
+}
+
+public class TesterMcq {
+  public static void main(String[] args) {
+    D.m1();
+  }}
+
+  A.10 10 B.10 20 C.20 10 D.20 20
+  
+  Ans = c
+
+  Ques 2------------
+
+  Guess the output.
+
+  class D {
+    static int x = 10;
+
+    public static void m1(int x) {
+      x = 50;
+      System.out.println(x);
+      System.out.println(D.x);
+    }
+  }
+
+  public class TesterMcq {
+    public static void main(String[] args) {
+      D.m1(20);
+    }
+  }
+
+  A.1010 B.2020 C.5010 D.1050 E.2010
+
+ Ans = c
+  Ques 3-------------
+
+  class D {
+    static int x;
+
+    public static void m1(int x) {
+      x = x;
+      System.out.println(x);
+      x = D.x;
+      System.out.println(D.x);
+    }
+  }
+
+  public class TesterMcq {
+    public static void main(String[] args) {
+      D.m1(20);
+      int x = 30;
+      System.out.println(x);
+    }
+  }
+
+  A.0 20 30 B.20 0 30 C.20 20 30 D.20 20 0
+  
+ Ans = b
+ 
+  Ques 4-------------
+
+class D {
+static int x;
+public static void m1(int x) { //20
+for (D.x = 15; D.x <= x; D.x++) {//for(x=15;x<=20;x++)
+System.out.print(x+" ");
+}
+System.out.println(x);
+}
+}
+
+  public class TesterMcq {
+    public static void main(String[] args) {
+      D.m1(20);
+      System.out.println(D.x);
+    }
+  }
+
+  A.1516 17 18 19 20 21 15
+
+  B.2020 20 20 20 20 20 21
+
+  C.1516 17 18 19 20 21 21
+
+  D.2020 20 20 20 20 20 21
+  
+   Ans = b
+
+   
+
+  Ques 5-------------
+
+class D {
+    static int x = 5;
+
+    public static void m1(int x) {//15
+      while (x != 0) {
+        D.x = x--;
+      }
+      System.out.println(x);//15
+    }
+  }
+
+  public class TesterMcq {
+    public static void main(String[] args) {
+      D.m1(5);
+      System.out.println(D.x);
+    }
+  }A.0 1 B.1 0 C.0 0 D.5 5 E.0 5
+
+  F.Infinite loop
+  
+   Ans = A
+
+  Ques 6-------------
+
+class D {
+static int x=5;
+public static void m1(int x) {//5
+while(x!=0) {
+x=D.x--;
+}
+System.out.println(x);
+}
+}
+
+  public class TesterMcq {
+    public static void main(String[] args) {
+      int x = 5;
+      D.m1(x);
+      System.out.println(x);
+    }
+  }
+
+  A.0 1 B.0-1 C.0 5 D.0 0 E.Infinite loop
+
+  Ans = c
+  Ques 7------------
+
+  class Test {
+    static int x = 10;
+
+    public static void main(String[] args) {
+      for (int i = 0; i < 2; i++) {
+        int x = 30;
+        System.out.print(x + " ");
+      }
+      System.out.println(x);
+    }
+  }
+
+  A.30 30 10 B.0 1 2 C.0 1 20
+
+D. Compile time
+  error
+
+   Ans = a
+
+  Ques 8-------------
+
+  public class Test {
+    static int x = 5;
+
+    void method1() {
+      int x = 10;
+      System.out.println(x);
+    }
+
+    static void method2() {
+      int x = 15;
+      System.out.println(x);
+    }
+
+    public static void main(String[] args) {
+      Test obj = new Test();
+      obj.method1();
+      method2();
+      System.out.println(x);
+    }
+  }A)10 15 5 B)10 15 15 C)10 10 5 D)
+
+  Compilation error
+
+   Ans = a
+
+  Ques 9-------------
+
+  public class Test {
+    static int x = 5;
+
+    void instanceMethod() {
+      int x = 10;
+      System.out.println(x);
+    }
+
+    static void staticMethod() {
+      int x = 20;
+      Test obj = new Test();
+      obj.instanceMethod();
+      System.out.println(x);
+    }
+
+    public static void main(String[] args) {
+      staticMethod();
+      System.out.println(x);
+    }
+  }A)10 20 5 B)10 20 20 C)20 10 5 D)
+
+  Compilation error
+
+   Ans = a
+
+  Ques 10-------------
+
+public class Test {
+static int x = 5;
+void instanceMethod1() {
+int x = 10;
+System.out.println(x);
+}
+
+static void staticMethod1() {
+int x = 20;
+System.out.println(x);
+}
+
+void instanceMethod2() {
+x = 25;
+System.out.println(x);
+}
+
+public static void main(String[] args) {
+Test obj = new Test();
+obj.instanceMethod1();//10
+staticMethod1();//20
+//obj.instanceMethod2();//25
+System.out.println(x);//5
+}
+}A)10 20 25 5 B)10 20 25 25 C)10 20 25 20 D)
+
+  Compilation error
+
+   Ans = b
+
+  Ques 11-------------
+
+public class Test {
+static int x = 5;
+public static void main(String[] args) {
+for (int x = 0; x < 3; x++) {
+System.out.print(x + " ");
+}
+System.out.println(x);
+}
+}A)0 1 2 3 B)0 1 2 5 C)1 2 3 5 D)
+
+  Compilation error
+  
+ Ans = b
+ 
+  Ques 12-------------
+
+public class Test {
+static int x = 1;
+public static void main(String[] args) {
+for (int x = 0; x < 2; x++) {
+for (int y = 0; y < 2; y++) {
+int x = 10;//
+System.out.print(x + " ");
+}
+}
+System.out.println(x);
+}
+}
+
+  A)10 10 10 10 2 B)10 10 10 10 1 C)10 10 1 D)
+
+  Compilation error
+
+ Ans = d
+ 
+  Ques 13-------------
+
+public class Test {
+static int x = 100;
+public static void main(String[] args) {
+int x = 10;
+for (int i = 0; i < 3; i++) {
+x++;
+System.out.print(x + " ");//11 12 13
+}
+System.out.println(x);
+}
+}A)11 12 13 13 B)11 12 13 100 C)11 12 13 10 D)
+
+  Compilation error
+
+ Ans = a
+ 
+  Ques 14-----    comp--------
+
+public class Test {
+static int x = 5;
+public static void main(String[] args) {
+for (int i = 0; i < 3; i++) {
+int x = 0;
+x += i;
+System.out.print(x + " ");//0 1 2 5
+}
+System.out.println(x);//
+}
+}A)0 1 2 5 B)0 1 2 2 C)0 1 2 0 D)
+
+  Compilation error
+
+Answer - a
+  Ques 15-------------
+
+  public class Test {
+    static int x = 100;
+
+    public static void main(String[] args) {
+      for (int i = 0; i < 2; i++) {
+        int x = 25;
+        for (int j = 0; j < 2; j++) {
+          x++;
+          System.out.print(x + " ");
+        }
+        System.out.print(x + " ");
+      }
+      System.out.println(x);
+    }
+  }A)26 27 27 26 27 100 B)26 27 27 26 27 25 100 C)26 27 27 26 27 27 100 D)
+
+  Compilation error
+
+
+Ans - c
+  Ques 16-------------
+
+  public class Test {
+    static int x = 10;
+
+    public static void main(String[] args) {
+      if (x > 10) {
+        int x = 30;
+        if (x > 20) {
+          int x = 40;
+          System.out.println(x);
+        }
+        System.out.println(x);
+      }
+      System.out.println(x);
+    }
+  }A)40 30 20 B)40 30 40 C)40 30 10 D)
+
+  Compilation error
+
+
+
+doubt---------------
+  Ques 17-------------
+
+public class Test {
+static int x = 5;
+public static void main(String[] args) {
+
+if (x > 5) {
+x = 15;
+} else {
+int x = 20;
+System.out.println(x);//20
+}
+
+System.out.println(x);//5
+}
+}
+
+A)20 5 B)15 20 C)20 15 D)
+
+  Compilation error 
+  
+  Answer 20 5
+  
+  Ques 18-------------
+
+  public class Test {
+    static int x = 10;
+
+    public static void main(String[] args) {
+      int x = 20;
+
+      int y = (x > 15) ? (Test.x = 30) : (x = 40);//x=30
+
+      System.out.println(x + " " + y);//20  30
+    }
+  }
+
+  A)30 30 B)40 40 C)20 30 D)
+
+  Compilation error
+
+  Answer - c
+
+  Ques 19-------------
+
+  public class Test {
+    static int x = 10;
+
+    public static void main(String[] args) {
+      switch (x) {
+        case 10:
+          int x = 30;
+          System.out.println(x);//30
+        case 20:
+          x = 40;
+          System.out.println(x);//40
+        default:
+          System.out.println(Test.x);//10
+      }
+
+      System.out.println(x);//10
+    }
+  }
+
+  A.30 40 10 B.30 40 40 40 C.30 40 10 10 D.40 40 10
+
+E. Compile time
+  Error
+
+Answer c
+
+  Ques 20
+
+public class Test {
+static int x = 10;
+public static void main(String[] args) {
+switch (x) {
+case 10:
+int x = 30;
+System.out.println(x);//30
+x = 40;
+case 20:
+
+System.out.println(x);
+break;
+default:
+System.out.println(x);
+}
+
+System.out.println(x);
+}
+}
+
+  A.30 40 40 10 B.30 40 10 C.30 40 40 D.30 40 10 10
+
+E. Compile time
+  Error
+
+Answer e
+  Ques 21-------------
+
+  public class Test {
+    static int x = 5;
+
+    public static void main(String[] args) {
+
+      if (x > 5) {
+        int x = 15;
+        {
+          int x = 20;
+          System.out.println(x);
+        }
+        System.out.println(x);
+      } else {
+        x = 25;
+        System.out.println(x);
+      }
+
+      System.out.println(x);
+    }
+  }
+
+  A.20 25 B.25 25 C.20 15 5 D.25 5
+
+E. Compile time
+  error
+
+Answer e
+  Ques 22-------------
+
+  public class Test {
+public static void main(String[] args) {
+int a = 7;
+char b = 'C';
+System.out.println((a % 2 == 0) ? ((b == 'C') ? a + b : a) : ((b > 'A') ? 'A' : a));
+}                                               74            : 'A'
+  }
+
+  A.Compile time error
+B. A C.65 D.74
+
+  
+  E.J 
+  
+  Ans - 65
+  Ques 23-------------
+
+  public class Test {
+    public static void main(String[] args) {
+      int a = 90;
+      char b = 'C';
+      System.out.println((a % 2 != 0) ? 98 : 'Z');//z
+      System.out.println((b == 67) ? 'Z' : a);//a   90
+    }
+  }
+
+  A.98 Z B.Z 90 C.b 90 D.90 90
+Ans = b
+
+  Ques 24-------------
+
+  public class Test {
+    public static void main(String[] args) {
+      System.out.println((6 != 6.0) ? 65535 : 'Z');
+      System.out.println((true ^ true) ? 65538 : 'Z');
+    }
+}
+
+A.Z 90 B.90 90 C.65535
+
+Z
+D.Z
+65538
+
+Ans - A

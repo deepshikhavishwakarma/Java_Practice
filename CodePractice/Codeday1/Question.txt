@@ -1,0 +1,44 @@
+1. WAP to store two integers and display the following:
+   a. addition
+   b. difference
+   c. product
+
+   Solution - AddDiffProduct.java
+
+   
+2. Which operator is used to get the quotient after dividing
+   operands?
+
+   Answer - /(divide)
+   
+3. Which operator is used to assign value to a variable?
+
+   Answer - (=)Assignment operater
+   
+4. Which operator is used to compare the equality of operands?
+
+   Answer - (==) is Equal to
+   
+5. WAP to store principal,rate of interest and time.Calculate
+   and display the simple interest.
+
+   Solution - SimpleInterest.java
+   
+6. Suppose the radius of a circle is stored as 3.7cm.Calculate and display the area of the circle and circumference of circle.
+
+ Solution- Circle.java
+ 
+7. WAP to store a candiadte's age and check whether a candidate is eligible for voting or not.
+
+Solution - Vote.java
+
+8. WAP to store a number and check whether number is positive or negative.
+
+  Solution- PositNEg.java
+  
+9. WAP to store two integers and display the  largest of two numbers.
+
+  Solution- LargestNum.java
+  
+10. WAP to store a number and check the given number is even or odd.
+  Solution - EvenOdd.java

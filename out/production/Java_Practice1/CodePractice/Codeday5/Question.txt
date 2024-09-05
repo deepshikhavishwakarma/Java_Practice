@@ -1,0 +1,368 @@
+1- Which of these access specifiers must be used for main() method?
+a) private
+b) public
+c) protected
+d) none of the mentioned
+
+Answer - public
+-----------------------------------------------------------------------
+2-Which access modifier is not allowed for top-level classes?(outer class)
+
+a) public
+b) private
+c) protected
+d) default
+
+Answer - Private,protected
+----------------------------------------------------------
+3-Which access modifier makes a member accessible from anywhere in the program?
+
+a) private
+b) protected
+c) default
+d) public
+
+Answer - public
+-------------------------------------------------------------------
+4-Which of the following is not an access modifier in Java?
+
+a) public
+b) private
+c) void
+d) protected
+
+Answer - void
+
+----------------------------------------------------------------------
+5-A public class member can be accessed by:
+
+a) Only the same class
+b) Classes in the same package
+c) Subclasses
+d) Any class
+
+Answer - Any class
+
+----------------------------------------------------------------
+6-Which access modifier would you use for a member that should be accessible within the same package but hidden from outside the package?
+
+a) public
+b) private
+c) protected
+d) default
+
+Answer - default--------------------------------------
+
+-------------------------------------------------------------------------------------------------------
+7-Which of the following is true about protected access modifier?
+
+a) It provides more access than public.
+b) It restricts access to the same class only.
+c) It allows access within the same package and subclasses.
+d) It is the same as default access.
+
+Answer -  c
+
+---------------------------------------------------------------------------------
+8-The protected access modifier is less restrictive than:
+
+a) public
+b) private
+c) default
+d) No access modifier
+
+Answer -  private
+
+------------------------------------------------------------------------------------
+Variable-
+__________
+
+1-What is output of this program:-
+public class Program {
+  int a=20;
+  public static void main(String[] args) {
+    int a=10;
+    System.out.println(a);
+  }
+
+}
+
+Answer - 10
+-----------------------------------------------------------
+2-What is output of this program:-
+public class Program {
+  int a=20;
+  public static void main(String[] args) {
+     a=10;
+    System.out.println(a);
+  }
+
+}
+
+Answer - Error
+-----------------------------------------------------------
+3-What is output of this program:-
+public class Program {
+  static int a=20;
+  public static void main(String[] args) {
+     a=10;
+    System.out.println(a);
+  }
+
+}
+
+Answer - 10
+----------------------------------------------------------------------
+4-What is output of this program:-
+public class Program {
+  static int a=20;
+  public static void main(String[] args) {
+
+    System.out.println(a+' ');
+  }
+
+}
+
+Answer - 52
+---------------------------------------------------------------
+5-What is output of this program:-
+public class Program {
+  static int a=20;
+  public static void main(String[] args) {
+
+    System.out.println(' '*10+'A');
+  }
+
+}
+
+Answer - 320A
+
+------------------------------------------------------------------
+6-What is output of this program:-
+public class Program {
+   int a=100;
+   a=30;
+  public static void main(String[] args) {
+
+    System.out.println(a);
+  }
+
+}
+
+Answer - error
+------------------------------------------------------------------
+7-What is output of this program:-
+public class Program {
+
+
+  public static void main(String[] args) {
+    int a=259;
+    byte k=(byte) a;
+
+    System.out.println(k);
+  }
+
+}
+Answer - 3
+--------------------------------------------------------------
+8-What is output of this program:-
+public class Program {
+  static double a=100f;
+
+  public static void main(String[] args) {
+
+    System.out.println(a);
+  }
+
+}
+
+Answer -100.0
+-----------------------------------------------------------------
+9-What is output of this program:-
+public class Program {
+
+
+  public static void main(String[] args) {
+    double a=65+'A'+67;
+    System.out.println(a);
+  }
+
+}
+
+Answer - 197.0
+--------------------------------------------------------------------
+10-What is output of this program:-
+public class Program {
+   double a;
+
+  public static void main(String[] args) {
+    Program p=new Program();
+     p.a=65+'A'+67;
+    System.out.println(a);
+  }
+
+}
+
+Answer - error
+----------------------------------------------------------------------
+11-What is output of this program:-
+public class Program {
+
+
+  public static void main(String[] args) {
+
+
+    System.out.println(' '+65+" "+67);
+  }
+
+}
+
+Answer - 97 67
+-------------------------------------------------------------------------
+12-What is output of this program:-
+public class Program {
+
+
+  public static void main(String[] args) {
+
+     double a=11.0;
+     int b=11;
+    System.out.println(a==b);
+  }
+
+}
+
+Answer - true
+-------------------------------------------------------------------
+13-
+
+public class Program {
+
+
+  public static void main(String[] args) {
+    int a=10;
+    long b=a;
+    Double c=b;
+
+    System.out.println(c);
+  }
+
+}
+
+
+-------------------------------------------------------------------
+14-
+public class Program {
+
+
+  public static void main(String[] args) {
+
+    char c=9;
+    int k=c;
+
+    System.out.println(k);
+  }
+
+}
+Answer - 9   if char c = '9' then o/p will br 57 
+---------------------------------------------------
+15-
+public class Program {
+
+
+  public static void main(String[] args) {
+
+    Long l=9l;
+    int k=l;
+
+    System.out.println(k);
+  }
+
+}
+
+
+Answer - error: incompatible types: Long cannot be converted to int
+-----------------------------------------------------------------------------------------------
+Program 1-An automorphic number is a number whose square ends in the 
+same digits as the number itself.
+For example :
+5,6,25 are automorphic numbers.
+
+5*5=25 // last digit is 5
+
+6*6=36 // last digit is 6
+
+25*25=625 // last digit is 25
+
+OUTPUT :
+
+Enter a number: 25
+
+Square of 25 is 625
+25 is an Automorphic number
+
+
+Enter a number: 14
+
+Square of 14 is 196
+14 is NOT an Automorphic number
+-------------------------------------------------------------------------------------------------------------------------------
+program-2 
+
+A spy number is a number where the sum of its digits equals 
+the product of its digits.
+For example :
+1124 is a spy number, because the sum of its digits is 1+1+2+
+4=8 and the product of its digits is 1*1*2*4=8 is equal.
+
+OUTPUT :
+
+
+Enter the number:2114
+Given number is a Spy number.
+
+
+Enter the number:1113
+Given number is NOT a Spy number.
+
+
+
+
+package CodePractice.Codeday5;
+
+import java.util.*;
+
+public class Automorphic {
+  static void isAutomorp(int num) {
+    int n1 = num;// 25
+    int count = 0;
+
+    while (n1 != 0) {
+      count++;//2
+      n1 /= 10;
+    }
+    int number = (int) (Math.pow(10, count));
+    int sq = n1 * n1;// 625
+
+    while (n1 != 0) {
+      if (sq % number == n1 % number) {
+        System.out.println(num + " is an Automorphic number");
+        break;
+      } else {
+        System.out.println(num + " is not an Automorphic number");
+      }
+
+      sq /= 10;
+      n1 /= 10;
+    }
+
+  }
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter your number: ");
+    int n = sc.nextInt();
+    Automorphic.isAutomorp(n);
+    sc.close();
+  }
+}

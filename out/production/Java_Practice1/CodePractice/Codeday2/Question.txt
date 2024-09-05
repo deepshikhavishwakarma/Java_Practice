@@ -1,0 +1,125 @@
+1.Swap elements
+Program to swap all elements of two integer arrays using user define function in C.
+
+Input as :
+
+Enter array size : 6
+
+Enter 6 elements for 1st array : 1 2 3 4 5 6
+
+Enter 6 elements for 2nd array : 7 8 9 0 1 2
+
+
+Output as :
+
+After swapping :
+
+1st array : 7 8 9 0 1 2
+
+2nd array : 1 2 3 4 5 6
+========================================================================================================
+ Armstrong number
+
+Write a Java program to find all the Armstrong number in beetween 100 to 10000 by using 2 different
+
+user defined function and one main function to display all the Armstrong number in the given range.
+
+Armstrong number Example :
+
+153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+
+
+Armstrong numbers between 100 and 10000 are:
+
+153
+
+370
+
+371
+
+407
+
+1634
+
+8208
+
+9474
+========================================================================================================
+ Find the Largest Element
+
+Find the Largest Element: Create a program that finds the largest element in an array of integers. Implement separate functions for input, finding the largest element, and main function to displaying the result.
+
+Input as :
+
+Enter array size : 6
+
+Enter 6 elements : 5 6 3 6 7 9
+
+Output as :
+
+The largest element is : 9
+========================================================================================================
+ Bank Account Management
+
+Bank Account Management: Develop a program that simulates a simple bank account system. Users can create accounts, deposit money, withdraw money, and check their balances. Implement separate functions for these operations. Take the initial balance as Rs.2000.
+
+Condition :
+
+For deposit :
+
+* If the user want to deposit 0 or negetive amount then print "Invalid amount to deposit"
+
+
+For withdraw :
+
+* If the user want to withdraw 0 or negetive amount then print "Invalid amount to withdrawal"
+
+* If the user given amount is greater than the balance then print "Insufficient Funds"
+
+========================================================================================================
+ Amicable Numbers
+
+Amicable Numbers:
+
+Write a program to find and display all pairs of amicable numbers within a given range, by using different user defined functions.
+
+Amicable numbers are pairs of numbers where the sum of the proper divisors of one number is equal to the other number.
+
+Example :
+
+-> a = 220
+
+  The divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, and 110 excluding itself.
+
+  The sum of these divisors is 284: 1 + 2 + 4 + 5 + 10 + 11 + 20 + 22 + 44 + 55 + 110 = 284.
+
+-> b = 284
+
+  The divisors of 284 are 1, 2, 4, 71, and 142 excluding itself.
+
+  The sum of these divisors is 220: 1 + 2 + 4 + 71 + 142 = 220.
+
+
+So, (220, 284) is a pair of amicable numbers.
+
+Amicable pairs between 100 and 10000 are:
+
+(220, 284)
+
+(284, 220)
+
+(1184, 1210)
+
+(1210, 1184)
+
+(2620, 2924)
+
+(2924, 2620)
+
+(5020, 5564)
+
+(5564, 5020)
+
+(6232, 6368)
+
+(6368, 6232)

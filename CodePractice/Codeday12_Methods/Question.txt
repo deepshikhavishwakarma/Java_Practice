@@ -1,0 +1,51 @@
+Que-1
+_________________________________________
+The program reads the basic salary of an employee from the user using the command line argument,and
+by creating the multiple method 
+
+Method 
+--------------------
+Name : calculateAndPrintGrossSalary
+returnType : void
+methodType : non static
+Parameter:  String name,int id,String address,long adharNumber,String citizenShip,double basicSalary
+Verification
+____________________________________________________________________________________________________
+> If citizenship is Indian then 
+> If the adharNumber is of 13 digit 
+   |- For that call one method name as countAdharDigit
+      return type : boolean 
+      method type : non static 
+      Parameter : long adharNumber 
+      Logic : This method should count the adharaNumber is of 13 digit or not if the adharNumber 
+              is of 13 return true otherwise return false.
+> If the address is of hyderbad.
+____________________________________________________________________________________________________
+If ALL THE ABOVE REQUIREMENTS VERIFIY THEN CALL THE METHOD 
+Name: calculateSalary
+returnType : void
+method type : non static 
+parameter as : String name,int id,String address,long adharNumber,String citizenShip,double basicSalary
+
+Logic: Calculates HRA and DA based on the given criteria:
+       [ Take HRA and DA  as the local variable of the method ]
+
+Basic Salary <= 10000: HRA = 20%, DA = 80%
+Basic Salary <= 20000: HRA = 25%, DA = 90%
+Basic Salary > 20000: HRA = 30%, DA = 95%
+
+Calculates Gross Salary: Gross Salary = Basic Salary + HRA + DA
+
+Output: Prints the basic salary, HRA, DA, and gross salary directly from this method.
+        and also print the detail of the employee
+        as name. id, address, adharNumber,citizenShip,basicSalary
+
+Main Method:
+Taking the input as command line arguments create the object of the class and then call the
+method.
+Input as:  String name,
+           int id,
+           String address,
+           long adharNumber, 
+           String citizenShip,
+           double basicSalary

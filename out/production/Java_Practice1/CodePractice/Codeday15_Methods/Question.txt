@@ -1,0 +1,87 @@
+Ques - 1
+------------
+
+Define a class Car with properties 
+
+public String Company
+public String model
+public int year
+public String mileage.
+
+Create a no parameterized method names setCarDetails(), by using scanner class initialize all the instance variables of Car class.
+Create a display method which will print all the properties of Car.
+
+Develop a ElC class called TestCar , in main method create 2 object with different data and initialize all the data members by using 
+setCarDetails() method, finally call display method.
+
+Ques - 2
+-------------
+A BLC (Business Logic Class) called Student is given to you.
+
+Instance Variables: 
+
+studentId :private-int
+
+studentName : private-String
+
+marks: private-int
+
+grade: private-char
+
+
+method : 
+setStudentData():void:public
+
+Create a method public void setStudentData() with the parameters: studentId, studentName, marks.
+Note that grade is not set through method because it is a calculated value.
+
+
+
+Methods :
+displayDetails():void: public This method should print the details of the student in the following format:
+
+Student [name=John Smith, studentId=123, marks=95, grade=A] 
+
+
+
+calculateGrade(): This is a public method that calculates the grade based on the marks that is set. 
+If marks is above 90, grade is set to A. 
+If marks is between 81 and 90, grade is set to B, 
+if marks is between 71 and 80, grade is set to C, 
+if marks is between 61 and 70, grade is set to D, 
+if marks is less than 61, grade is set to E.
+
+Use this method when you need to set or reset grade.
+
+An ELC(Executable Logic class) Tester with main method is given to you to test your code.
+
+Ques - 3
+---------------
+Class Batsman is given to you. Add below details to the class
+
+1. Instance variables:
+  name: String,
+  runs: int,
+  matches: int,
+  batting_avg: float.
+
+2.define parameterized method setBatsmanValues() which will intitialize instance variable
+
+
+3. Create below methods,
+Method name: computeBattingAverage
+Return type: void
+This method should print the batting average of the batsman by dividing run with matches.
+Note: 
+a. If runs or matches values are negative print 'Error'.
+b. If runs are greater than 0 when matches are 0 print 'Error'.
+
+Method name: getStatistics
+Return type: void
+This method should print the details of the batsman.
+
+
+
+Note: 
+a. If runs or matches values are negative print 'Error'.
+b. If runs are greater than 0 when matches are 0 print 'Error'.

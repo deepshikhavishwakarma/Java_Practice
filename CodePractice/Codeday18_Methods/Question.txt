@@ -1,0 +1,145 @@
+[Note draw Heap and stack diagram for every questions]
+
+Ques - 1
+-----------
+What will be the output of the following code?
+
+class Sample {
+  int x;
+  int y;
+    public void modify(Sample s) {
+    System.out.println("x :" + x + ", " + "y :" + y);//0 0
+    this.x  = 11;
+    this.y  = 21;
+    System.out.println("x :" + s.x + ", " + "y :" + s.y);//11 21
+  }
+}
+
+public class LabTask {
+    public static void main(String[] args) {
+    Sample s1 = new Sample();//s1-> 1010
+    System.out.println("x :" + s1.x + ", " + "y :" + s1.y);//0 0
+    System.out.println();
+    s1.modify(s1);
+    System.out.println();
+    System.out.println("x :" + s1.x + ", " + "y :" + s1.y);//11 21
+  }
+}
+
+
+Ques - 2
+------------
+What will be the output of the following code?
+class Sample {
+  int x;
+  int y;
+    public void modify(Sample s) {// 1010
+    System.out.println("x :" + x + ", " + "y :" + y);//0 0 
+    this.x  = 11;
+    this.y  = 21;
+    System.out.println("x :" + s.x + ", " + "y :" + s.y);//11 21
+  }
+}
+
+public class LabTask {
+    public static void main(String[] args) {
+    Sample s1 = new Sample(); //s1->1010
+    System.out.println("x :" + s1.x + ", " + "y :" + s1.y);//0 0
+    System.out.println();
+    s1.modify(s1);
+    System.out.println();
+    System.out.println("x :" + s1.x + ", " + "y :" + s1.y);//11 21
+  }
+}
+
+
+Ques - 3
+--------------
+What will be the output of the following code?
+class Sample {
+  int x;
+  int y;
+    public void modify(Sample s) {
+    System.out.println("x :" +x +", "+"y :"+y);
+    s.x  = 11;
+    s.y  = 21;
+    System.out.println("x :" +x +", "+"y :"+y);
+  }
+}
+public class LabTask {
+    public static void main(String[] args) {
+    Sample s1 = new Sample();
+    System.out.println("x :" +s1.x +", "+"y :"+s1.y);
+    System.out.println();
+    s1.modify(s1);
+    System.out.println();
+    System.out.println("x :" +s1.x +", "+"y :"+s1.y);
+
+  }
+}
+
+Ques - 4
+--------------
+What will be the output of the following code?
+
+class Sample {
+  int x;
+  int y;
+      public void modify(Sample s) {//1010
+       x = s.x + 5;//5
+       s.y = y + 5;//5
+  }
+}
+
+public class LabTask {
+    public static void main(String[] args) {
+    Sample s1 = new Sample();
+    Sample s2 = new Sample();
+    System.out.println("x :" + s1.x + ", " + "y :" + s1.y);//0 0
+    System.out.println("x :" + s2.x + ", " + "y :" + s2.y);// 0 0
+    s1.modify(s1);
+    System.out.println();
+    System.out.println("x :" + s1.x + ", " + "y :" + s1.y);//5 5
+    System.out.println("x :" + s2.x + ", " + "y :" + s2.y);// 0 0
+
+    s1.modify(s2);
+    System.out.println();
+    System.out.println("x :" + s1.x + ", " + "y :" + s1.y);//0 5
+    System.out.println("x :" + s2.x + ", " + "y :" + s2.y);//0 10
+  }
+}
+
+
+Ques - 5
+------------
+What will be the output of the following code?
+class Sample {
+  int x;
+  int y;
+    public void modify(Sample s) {//s1->1010  x=0  y=0
+    x = 11;
+    s.y = 21;
+    System.out.println("x :" + x + ", " + "y :" + y);//11 21
+    System.out.println("x :" + s.x + ", " + "y :" + s.y);//11 21
+    s = new Sample();
+    s.x = 55;
+    s.y = 66;
+    System.out.println("x :" + x + ", " + "y :" + y);//55 66
+    System.out.println("x :" + s.x + ", " + "y :" + s.y);//55 66
+  }
+}
+
+public class LabTask {
+    public static void main(String[] args) {
+    Sample s1 = new Sample();
+    System.out.println("x :" + s1.x + ", " + "y :" + s1.y);//0 0
+    System.out.println();
+    s1.modify(s1);
+    System.out.println();
+    System.out.println("x :" + s1.x + ", " + "y :" + s1.y);55 66
+  }
+}
+
+
+
+

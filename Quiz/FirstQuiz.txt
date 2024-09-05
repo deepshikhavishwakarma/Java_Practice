@@ -1,0 +1,213 @@
+Q 1. Who invented Java Programming?
+a)Guido van Rossum
+b)James Gosling
+c)Dennis Ritchie
+d)Bjarne Stroustrup
+Answer: James Gosling(b)
+
+Q 2. What makes the Java platform independent?
+a)Advanced programming language
+b)It uses bytecode for execution
+c)Class compilation
+d)All of these
+e)None Of this
+Answwer: All of these(d)
+
+Q 3. Multiline comment is created using ______.
+a)//
+b)/* */
+c)All of these
+d)None of the above
+Answer: /* */ (b)
+
+Q 4. What is the extension of file containing source code of java?
+a) .class
+b) .java
+c) .bak
+d) .zip
+Answer: .java(b)
+
+Q 5. What is the extension of file containing byte code?
+a) .txt
+b) .py
+c) .java
+d) .class
+e) .cpp
+Answer:  .class(d)
+
+Q 6. JDK stands for ____.
+a)Java development kit
+b)Java deployment kit
+c)JavaScript deployment kit
+d)None of these
+Answer: 
+Java development kit(a)
+
+Q 7. JIT stands for _____.
+a) Java in time
+b) Java institute of technology
+c) just in time
+d) none of the above
+Answer: just in time(c)
+
+Q 8. __________is the ability of a Java application to perform multiple tasks
+at the same time and each task is independent of other task.
+a)Multiprogramming
+b)Multiprocessing
+c)Multithreading
+d)Multitasking
+Answer: Multithreading(c)
+
+Q 9. Which one of the following is not a Java feature?
+a)It supports use of pointers
+b)Object-oriented
+c)Portable
+d)Dynamic and Extensible
+Answer: It supports use of pointers(a)
+
+Q 10. Which of the statement is true about Java?
+a)Java is a low level pratform independent programming language
+b)Java is a code dependent and high level programming language
+c)Java is a high level platform-dependent programming language
+d)None of above
+Answer: Java is a high level platform-dependent programming language(c)
+
+Q 11. What is the return type of main method in java?
+a)String[]
+b)static
+c)void
+d)no return type
+Answer: no return type (d)
+
+Q 12. Every statement in Java language should end with a_____________.
+a)Dot or Period
+b)Comma
+c)Semicolon
+d)Colon
+Answer: Semicolon(c)
+
+Q 13. Observe the following code snippet and choose the correct option.
+byte b = 10; // line 1
+b = b * 10; // line 2
+a) Lines 1 and 2 both execute without any error.e 1
+b) Because of line 2, the code will not compile.
+c) Because of line 1, the code will not compile.
+d) None of the above
+Answer: Because of line 2, the code will not compile.(b)
+
+Q 14. A compiler converts the Java program into an intermediate
+language representation called _____
+a) Source code
+b) native code
+c) java code
+d) class code
+e) bytecode
+Answer: bytecode(e)
+
+Q 15. What is the use of Access modifier “pubic” in main( ) method?
+a)To hide the main method from misuse
+b)To call the main method outside of Class or Package by JVM
+c)To protect main method from outside world
+d)no specific reason
+Answer: To call the main method outside of Class or Package by JVM (b)
+
+Q 16.Which of the following is not a primitive data type in Java?
+a)Boolean
+b)int
+c)boolean
+d)long
+Answer: Boolean (a)
+
+Q 17. When an expression consists of int, double, long, float, then the
+entire expression will get promoted into a data type that is:
+a)float
+b)long
+c)int
+d)double
+Answer: double (d)
+
+Q 18.What will be the output of the following Java code snippet without passing any
+argument during execution?
+
+class Test
+{
+public static void main(String args[])
+{
+if(args.length<=0)
+System.out.println(args.length);
+else
+System.out.println("args size is 0 as no arguments passed ");
+}
+}
+a)The snippet compiles, runs and prints HI
+b)The snippet compiles and runs prints -1
+c)The snippet compiles, runs and prints 0
+d)The snippet does not compile
+Answer: The snippet compiles, runs and prints 0 (c)
+
+Q 19. What is the range of values that can be stored in a byte data type in Java?
+a)-127 to 128
+b)-32768 to 32767
+c)-2147483648 to 2147483647
+d)-128 to 127
+Answer: -127 to 128 (a)
+
+Q 20. _____ cannot be used as identifier.
+a) keyword
+b) name
+c) Circle
+d) DAYS
+Answer: keyword (a)
+
+Q 21. The name of any programming elements such as class, variable, method
+or an interface in Java language is called__________
+a)Argument
+b)Parameter
+c)Identifier
+d)Source code
+Answer: Identifier (c)
+
+Q 22.A valid Identifier or name in Java language can start with which character?
+a) $, _
+b)a-z, A-Z
+c)0-9
+d)A and B
+Answer: a-z, A-Z (b)
+
+Q 23. Which line of the snippet will be responsible for compile time error?
+  double d1 = 5f; // line 1
+  double d2 = 5.0; // line 2
+  float f1 = 5f; // line 3
+  float f2 = 5.0; // line 4
+a)line 1
+b)line 2
+c)line 3
+d)line 4
+e) All of above
+Answer: line 4 (d)
+
+Q 24. Identify the invalid variable name in following examples:
+a) _theVariable
+b) $CurrencyConverted
+c) #secondVariable
+d) accountNumber
+Answer: #secondVariable (c)
+
+Q 25. What is the reason behind error in the following snippet:
+byte b = 10;
+b = b * 10;
+a)b cannot contain value 10
+b)b cannot contain value 100, limited by its range
+c)operator has converted b * 10 into int, which can not be converted to
+  byte without using explicit casting.
+d)No error in this code
+Answer: operator has converted b * 10 into int, which can not be converted to
+  byte without using explicit casting.(c)
+
+Q 26. Which of the following declarations does not compile?
+a)double num1, double num2 = 0;
+b)int num1, num2;
+c)int num1, num2 = 0;
+d)int num1 = 0, num2 = 0;
+Answer:double num1, double num2 = 0; (a)
+

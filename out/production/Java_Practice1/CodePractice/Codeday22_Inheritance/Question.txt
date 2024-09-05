@@ -1,0 +1,18 @@
+
+
+Coding questions:
+
+1. WAP for the below requirement:
+   Create a class
+   Create a NSV in the class.
+   Create a sub class
+   Create NSV in sub class
+   Create NSM in sub class
+   Print the super class NSV and Sub class NSV inside the method
+   Call the method from a main class which contains main method
+
+ 2. WAP for the below requirement:
+   Create 2 NSV in super class
+   Create 1 NSV & 1 NSM in sub class
+   Display the super class & sub class variable inside NSM
+   Create object and call the method from the main method
