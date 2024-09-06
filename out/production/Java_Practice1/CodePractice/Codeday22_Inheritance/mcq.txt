@@ -1,0 +1,141 @@
+
+Q1. What is Inheritance in Java programming?
+  a. It's a Java-specific term for importing packages.
+  b. It's a process of creating a new class using the main() method.
+  c. It's a technique to create objects in Java.
+  d. It's a process where one class acquires the properties (fields)
+     and behaviors (methods) of another class.
+Answer:
+
+Q2.___________ keyword is used for inheritance in Java.
+a. class
+b. new
+c. extends
+d. this
+Answer:
+
+Q3.Can a subclass inherit private members of its superclass?
+a. Yes
+b. No
+Answer:
+
+Q4. class Animal {
+    public void move() {
+        System.out.println("The animal moves");
+    }
+}
+
+ class Cheetah Extends Animal {
+    public void move() {
+        System.out.println("The cheetah moves swiftly");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Cheetah cheetah = new Cheetah();
+        cheetah.move();
+    }
+}
+a. The animal moves
+b. The cheetah moves
+c. Compile Time error
+d. None of the above
+Answer:
+
+Q5. class Car {
+    String name = "Car";
+    String message() {
+        return "from factory";
+    }
+}
+class Maruti extends Car {
+    String name = "Alto800";
+    String message() {
+        return "from showroom";
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car c = new Car();
+        System.out.println(c.name + " " + c.message());
+    }
+}
+a. Alto800 from showroom
+b. Car from showroom
+c. Car from factory
+d. Altoo800 from factory
+Answer:
+
+Q6.
+class Grandparent {
+    public void print() {
+        System.out.println("Grandparent's Print()");
+    }
+}
+class Parent extends Grandparent { }
+class Child extends Parent { }
+public class Main {
+    public static void main(String[] args) {
+        Child child = new Child();
+        child.print();
+    }
+}
+a.Grandparent's Print()
+b.CTE
+c.no output
+d. RTE
+Answer:
+
+
+Q7. class Test
+{
+    void nonStaticMethod()
+    {
+        System.out.println("Non Static Method");
+    }
+}
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Test test = null;
+        test.nonStaticMethod();
+    }
+}
+a) Non Static Method
+b) RTE: NullPointerException
+c) Compile-time error
+d) No output
+Answer:
+
+Q8.class AClass
+{
+    static void displayMessage()
+    {
+        System.out.println("ParentClass Display");
+    }
+}
+
+class BClass extends AClass
+{
+    static void displayMessage()
+    {
+        System.out.println("ChildClass Display");
+    }
+}
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        AClass aClass = null;
+        aClass.displayMessage();
+    }
+}
+a. ParentClass Display
+b. ChildClass Display
+c. Compile Time Error
+d. Run Time Error
+Answer:

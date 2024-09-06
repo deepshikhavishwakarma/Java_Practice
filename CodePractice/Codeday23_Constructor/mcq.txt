@@ -1,0 +1,322 @@
+Q1.Which keyword is used to inherit a class in Java?
+A) implements
+B) extends
+C) inherits
+D) super
+Answer:
+
+Q2. In Java, the IS-A relationship is demonstrated using which keyword?
+A) new
+B) extends
+C) super
+D) this
+Answer:
+
+Q3. Given the following code, which statement is true?
+class Animal {}
+class Dog extends Animal {}
+A) Dog IS-A Animal
+B) Animal IS-A Dog
+C) Dog HAS-A Animal
+D) Animal HAS-A Dog
+Answer:
+
+Q4. In Java, the HAS-A relationship is demonstrated using which concept?
+A) Inheritance
+B) Composition
+C) Polymorphism
+D) Encapsulation
+Answer: B) Composition
+
+
+Q5. Given the following code, which statement is true?
+class Engine {}
+class Car {
+    private Engine engine;
+}
+A) Car IS-A Engine
+B) Engine IS-A Car
+C) Car HAS-A Engine
+D) Engine HAS-A Car
+Answer: C) Car HAS-A Engine
+
+Q6. Which of the following statements is true about multiple inheritance in Java?
+A) Java supports multiple inheritance using classes.
+B) Java supports multiple inheritance using interfaces.
+C) Java supports multiple inheritance using both classes and interfaces.
+D) Java does not support multiple inheritance at all.
+Answer: B) Java supports multiple inheritance using interfaces.
+
+Q7. Given the following code, what is the output?
+class Animal {
+    void makeSound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Bark");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Animal a = new Dog();
+        a.makeSound();
+    }
+}
+A) Animal sound
+B) Bark
+C) Compilation error
+D) Runtime error
+Answer: B) Bark
+
+Q8. Which of the following is true about constructors in inheritance?
+A) Constructors are inherited.
+B) Constructors are not inherited.
+C) Constructors can be overloaded.
+D) Both B and C.
+Answer:
+
+Q9. Which statement is true about the super keyword in Java?
+A) It refers to the immediate child class object.
+B) It refers to the immediate parent class object.
+C) It is used to call the current class constructor.
+D) It is used to call static methods of the parent class.
+Answer: B) It refers to the immediate parent class object.
+
+Q10. What will be the output of the following code?
+class Base {
+    void display() {
+        System.out.println("Base display");
+    }
+}
+class Derived extends Base {
+    void display() {
+        System.out.println("Derived display");
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Base b = new Derived();
+        b.display();
+    }
+}
+A) Base display
+B) Derived display
+C) Compilation error
+D) Runtime error
+Answer:
+
+Q11. Which of the following describes the correct relationship?
+class Fruit {}
+class Apple extends Fruit {}
+class Basket {
+    private Fruit fruit;
+}
+A) Basket IS-A Fruit
+B) Apple HAS-A Fruit
+C) Basket HAS-A Fruit
+D) Fruit IS-A Apple
+Answer: C) Basket HAS-A Fruit
+
+Q12. Given the following code, what is the relationship between the classes?
+class Employee {}
+class Manager extends Employee {}
+class Department {
+    private Manager manager;
+}
+A) Department IS-A Manager
+B) Manager IS-A Employee
+C) Employee HAS-A Manager
+Answer: B) Manager IS-A Employee
+
+Q13. What is constructor chaining in Java?
+A) The process of calling one constructor from another within the
+   same class or from the parent class.
+B) The process of linking multiple methods together.
+C) The process of calling multiple constructors simultaneously.
+D) The process of overriding constructors.
+Answer:
+
+Q14. Which keyword is used  with () to call a constructor of the parent class in Java?
+A) this
+B) super
+C) parent
+D) extends
+Answer:
+
+Q15. Which keyword is used with () to call another constructor in the same class in Java?
+A) this
+B) super
+C) self
+D) extends
+Answer:
+
+Q16. Given the following code, what will be the output?
+class A {
+    A() {
+        System.out.println("A's constructor");
+    }
+}
+
+class B extends A {
+    B() {
+        System.out.println("B's constructor");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        B b = new B();
+    }
+}
+A) A's constructor
+B) B's constructor
+C) A's constructor
+B's constructor
+D) B's constructor
+A's constructor
+Answer:
+
+Q17. What will be the output of the following code?
+class X {
+    X() {
+        System.out.println("X's constructor");
+    }
+}
+
+class Y extends X {
+    Y() {
+        this(5);
+        System.out.println("Y's constructor");
+    }
+
+    Y(int a) {
+        System.out.println("Y's parameterized constructor");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Y y = new Y();
+    }
+}
+A) X's constructor
+B) X's constructor
+Y's parameterized constructor
+Y's constructor
+C) Y's parameterized constructor
+Y's constructor
+D) X's constructor
+Y's constructor
+Answer: B) X's constructor
+        Y's parameterized constructor
+        Y's constructor
+
+Q18.What will be the output of the following code demonstrating single
+inheritance with constructor chaining?
+class Animal {
+    Animal() {
+        System.out.println("Animal is created");
+    }
+}
+class Dog extends Animal {
+    Dog() {
+        super();
+        System.out.println("Dog is created");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+    }
+}
+A) Animal is created
+B) Dog is created
+C) Animal is created
+   Dog is created
+D) Compilation error
+Answer:
+
+Q19. What will be the output of the following code demonstrating
+composition?
+class Engine {
+    void start() {
+        System.out.println("Engine starts");
+    }
+}
+
+class Car {
+    private Engine engine;
+
+    Car() {
+        engine = new Engine();
+    }
+
+    void start() {
+        engine.start();
+        System.out.println("Car starts");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Car car = new Car();
+        car.start();
+    }
+}
+A) Engine starts
+B) Car starts
+C) Engine starts
+Car starts
+D) Compilation error
+Answer:
+
+Q20. What will be the output of the following code demonstrating
+   aggregation?
+class Address {
+    String city;
+    String state;
+
+    Address(String city, String state) {
+        this.city = city;
+        this.state = state;
+    }
+
+    void display() {
+        System.out.println(city + ", " + state);
+    }
+}
+
+class Person {
+    String name;
+    Address address;
+
+    Person(String name, Address address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    void display() {
+        System.out.println(name);
+        address.display();
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Address addr = new Address("New York", "NY");
+        Person person = new Person("John Doe", addr);
+        person.display();
+    }
+}
+A) John Doe
+B) New York, NY
+C) John Doe
+New York, NY
+D) Compilation error
+Answer:

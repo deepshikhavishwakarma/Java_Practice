@@ -1,0 +1,45 @@
+1. WAP for below requirement:
+  Create a class Circle
+  Radius is Non static.
+  Initialise the radius of the circle by taking input from user.
+  Create methods to find:
+     a. diameter of the circle
+     b. circumference of the circle
+     c. area of the circle
+     d. Display details of circle in a method
+  Call the methods from main method and display the details of the circle also.
+
+2. WAP for the below requirement:
+   a. VandeBharatExpress departs at 7 pm and takes
+      6hrs to reach the destination.
+   b. ShatabdiExpress departs at 7:25pm and takes 8hrs
+      to reach destination.
+   c. NagavalliExpress departs at 5:10pm and takes 6.5 hrs to
+   reach destination.
+   All the train's starting point is Secunderabad.
+   Create a method to display each train details in the above manner.
+   Create a separate class for main method.
+   Members and methods:
+        trainName: String
+    departureTime: double
+    destination: String
+    boardingStation: String
+    trainDetails(): String
+
+Q3. WAP for the below requirement:
+ You all may be aware of PUBG.We have different guns in PUBG.
+ Your work is to demonstrate the guns of PUBG using java.
+ e.g: There guns such as AKM, Scarl, M762, AWM, M416 etc
+ But all the guns are not same. Their names, mag. size , range, type
+ are different. Some have mag size 7 or 40 or 30 etc
+ Some range is 200m, 300m , 1000m etc.
+ Some are pistol,machine gun, sniper, rifle etc.
+ Create proper number of constructor and methods to initialise
+ the details of gun and display the details of the different guns
+ created.
+
+ Q4. WAP for 2 authors with different name.
+    a. There are different books with different title and no. of pages
+    but the price of both the books are same.
+    Define a method to display the details of the book.
+    Take proper no, of constructor to initialise the details of book.

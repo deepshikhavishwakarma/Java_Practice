@@ -1,0 +1,270 @@
+Que 1 : Car Has A Engine
+========================
+
+Create the Engine Class
+-----------------------
+A class to represent an engine with a model attribute.
+Variable Declaration:
+private String model; — This variable stores the model of the engine.
+
+Constructor Declaration
+public Engine(String model) — A constructor that initializes the engine model.
+
+Getter Method Declaration:
+public String getModel() — A method to get the engine model.
+
+toString Method Declaration:
+@Override public String toString() — A method to return a string representation of the engine.
+
+
+Create the Car Class
+--------------------
+A class to represent a car with make, model, and an engine.
+Variable Declarations:
+
+private String make; — This variable stores the make of the car.
+private String model; — This variable stores the model of the car.
+private Engine engine; — This variable stores the engine object of the car.
+
+Constructor Declaration:
+public Car(String make, String model, Engine engine) — A constructor that initializes the car's make, model, and engine.
+
+toString Method Declaration:
+@Override public String toString() — A method to return a string representation of the car.
+
+
+Create TestCar class
+---------------------
+-> Create main method
+-> Create an engine object.
+-> Create a car object that includes the engine.
+-> Display the car's information.
+
+
+Condition :
+-----------
+if any numeric value is zero or negative then print "Error Invalid Input".
+
+
+TEST CASE 1 :
+-------------
+sample input  : When your reading numeric values for any above Classe then make sure if any numeric value is <=0 then print "Error Invalid Input".
+
+sample output : Error Invalid Input
+
+
+TEST CASE 2:
+------------
+sample input  :
+                Engine engine = new Engine("V6 Hybrid");
+                Car car = new Car("Toyota", "Camry", engine);
+                System.out.println(car);
+
+sample output : Car Make: Toyota, Model: Camry, Engine Model: V6 Hybrid
+
+
+
+Que 2 : Customer and Orders Management
+======================================
+
+Create the Order Class
+----------------------
+A class to represent an order with details like order ID and product name.
+
+Variable Declarations:
+private String orderId; — This variable stores the order ID.
+private String productName; — This variable stores the name of the product ordered.
+
+Constructor Declaration:
+public Order(String orderId, String productName) — A constructor to initialize the order ID and product name.
+
+Getter Methods Declaration:
+public String getOrderId() — A method to get the order ID.
+public String getProductName() — A method to get the product name.
+
+toString Method Declaration:
+@Override public String toString() — A method to return a string representation of the order.
+
+
+
+Create the Customer Class
+-------------------------
+A class to represent a customer with details like name, email, and an order.
+
+Variable Declarations:
+private String name; — This variable stores the customer's name.
+private String email; — This variable stores the customer's email.
+private Order order; — This variable stores the order object.
+
+Constructor Declaration:
+public Customer(String name, String email, Order order) — A constructor to initialize the customer's name, email, and order.
+
+toString Method Declaration:
+@Override public String toString() — A method to return a string representation of the customer, including order details.
+
+
+Create Shoping class
+---------------------
+-> Create main method
+-> Create an Order object.
+-> Create a Customer object that includes the Order.
+-> Display the Customer information.
+
+Condition :
+-----------
+if any numeric value is zero or negative then print "Error Invalid Input".
+
+
+TEST CASE 1 :
+-------------
+sample input  : When your reading numeric values for any above Classe then make sure if any numeric value is <=0 then print "Error Invalid Input".
+
+sample output : Error Invalid Input
+
+
+TEST CASE 2:
+------------
+sample input  :
+                Order order = new Order("123456", "Laptop");
+                Customer customer = new Customer("James", "James@example.com", order);
+                System.out.println(customer);
+
+sample output : Customer Name: James, Email: James@example.com, Order ID: 123456, Product Name: Laptop
+
+
+##########################################################################################
+
+Que 3 : Modeling Employee and Address Details
+==============================================
+
+Create Address Class:
+---------------------
+Implement a class with private fields for the street and city.
+Provide a constructor to initialize these fields.
+Implement getters and a toString() method to display the address.
+
+
+Create Person Class:
+--------------------
+Implement a class with private fields for the name and an Address object.
+Provide a constructor to initialize the name and address.
+Implement a method to display the person's name and address.
+
+Create Test class:
+------------------
+-> Create a main method :
+-> Instantiate an Address object with sample data.
+-> Instantiate a Person object with the address you created.
+-> Print the employee's details using the method in the Person class.
+
+Condition :
+-----------
+if any numeric value is zero or negative then print "Error Invalid Input".
+
+
+TEST CASE 1 :
+-------------
+sample input  : When your reading numeric values for any above Classe then make sure if any numeric value is <=0 then print "Error Invalid Input".
+
+sample output : Error Invalid Input
+
+
+TEST CASE 2:
+------------
+sample input  :
+                Address address = new Address("123 Elm Street", "Springfield");
+                Person person = new Person("John Doe", address);
+                System.out.println(person);
+
+sample output : Name: John Doe, Address: 123 Elm Street, Springfield
+
+
+##########################################################################################
+
+
+Que 4 : Change The Driver
+==========================
+
+Scenario Description :
+John is a car enthusiast who loves collecting detailed information about different cars and their drivers.
+He has recently acquired information about a Hyundai Creta, and he has also collected details about the car's driver, John.
+John wants to store this information in his database and ensure that any changes to the original car details do not affect his backup copy.
+He also plans to change the driver of the car at a later time.
+
+John has a Java program with two main classes: Car and Driver. He wants to ensure that:
+
+He can create a Car object with specific attributes and set its driver's details.
+He can create a copy of this Car object, ensuring the copy remains unchanged even if the original is modified.
+He can change the driver of the original Car object.
+He can print the details of both the original and the copied Car objects to confirm the deep copy functionality.
+Help John by creating a Java program to accomplish these tasks.
+
+Create a Java BLC class named Car with following attributes:
+ private String brand
+ private String model
+ private int year and
+ private Driver driver
+
+Implement a parameterised constructor to initialise all the instance variable of Car.
+Implement one copy constructor for the Car class that takes a Car object and  initialize the new Car object with the same attributes.
+Take a pair of setter and getter method for all the instance variables.
+In the Car class, create a method named changeDriver(Driver newDriver) that changes the driver of the car to the specified driver.
+
+Create a Driver class and the class should have following attributes:
+ private String name and
+ private int age
+Implement a parameterised constructor to initialise all the instance variable of Driver.
+Take a pair of setter and getter method for all the instance variables.
+
+Create a Main class that creates a Car object and sets its attributes and the attributes of its driver. Then, create a copy of the Car object using the copy constructor and print the attributes of both the original and the copy of the Car objects to confirm that the copy constructor works correctly.
+Finally, use the changeDriver() method to change the driver of the original Car object, and print the attributes of both the original and the copy of the Car objects again to confirm that the copy constructor created a deep copy of the Driver object and that the changeDriver method did not affect the driver of the copy of the Car object.
+
+
+Condition :
+-----------
+if any numeric value is zero or negative then print "Error Invalid Input".
+
+
+TEST CASE 1 :
+-------------
+sample input  : When your reading numeric values for any above Classe then make sure if any numeric value is <=0 then print "Error Invalid Input".
+
+sample output : Error Invalid Input
+
+
+
+TEST CASE 2 :
+-------------
+sample input :
+               Driver driver1 = new Driver("John", 30);
+               Car car1 = new Car("Hyundai", "Creta", 2020, driver1);
+               Driver driver2 = new Driver("Logan", 35);
+
+sample output :
+              Original Car Details:
+              Car Brand: Hyundai
+              Car Model: Creta
+              Car Year: 2020
+              Driver Name: John
+              Driver Age: 30
+
+              Copied Car Details:
+              Car Brand: Hyundai
+              Car Model: Creta
+              Car Year: 2020
+              Driver Name: John
+              Driver Age: 30
+
+              Original Car Details after Changing Driver:
+              Car Brand: Hyundai
+              Car Model: Creta
+              Car Year: 2020
+              Driver Name: Logan
+              Driver Age: 35
+
+              Copied Car Details after Changing Driver in Original Car:
+              Car Brand: Hyundai
+              Car Model: Creta
+              Car Year: 2020
+              Driver Name: John
+              Driver Age: 30

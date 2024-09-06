@@ -1,0 +1,20 @@
+Q1. WAP for the below requirement:
+      Program for single level inheritance between interfaces
+     Create one implementation class
+
+Q2. WAP for the below requirements:
+       Create 3 interfaces
+      Perform multilevel inheritance between interfaces
+     Create single implementation
+
+Q3. WAP for the below requirements:
+        Create 3 interfaces and perform hierarchical inheritance among them
+       Create 2 implementation class
+
+Q4.WAP  for the below requirements:
+   Create three interfaces and perform multiple inheritance
+    Create single implementation class
+
+Q6. WAP for the below requirements:
+    Create an abstract class, and an interface
+   Create single implementation class which acts as sub class as well as implementation class

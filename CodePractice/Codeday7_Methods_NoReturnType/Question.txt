@@ -1,0 +1,110 @@
+1-The program reads the roll number, name, and marks for three subjects from the user.
+
+Method : 
+
+Name :  printStudentDetails 
+returnType : void
+methodType : static 
+Parameters: int rollNo, String name, int physics, int chemistry.
+
+Calculations: Computes the total marks,and average of the student.
+
+Output: Prints all details including the total marks and name , roll number and subject and 
+        average. 
+
+Main Method:
+It handles user input and calls the printStudentDetails method with the gathered data.
+
+
+------------------------------------------------------------------------------------------
+2-The program reads the temperature in centigrade from the user using the command line arguments.
+
+Method :
+
+Name : printTemperatureState
+returnType : void
+methodType : static 
+Parameter:  int Temp 
+
+Logic: Determines the state of the weather based on the given temperature using a series of if-else statements.
+
+Temp < 0 then Freezing weather
+Temp 0-10 then Very Cold weather
+Temp 10-20 then Cold weather
+Temp 20-30 then Normal in Temp
+Temp 30-40 then Its Hot
+Temp >=40 then Its Very Hot
+
+Output: Prints the temperature and the corresponding state message directly from this method.
+Main Method:
+
+It handles user input and calls the printTemperatureState method with the gathered temperature.
+-----------------------------------------------------------------------------------------------------
+3-The program reads the credit score and monthly income of the applicant from the user using the
+  command line arguments.
+
+ Method:
+
+name :checkLoanEligibility
+returnType : void
+methodType : static
+Parameters:  int creditScore , double monthlyIncome 
+
+Logic: Determines eligibility based on:
+
+Credit Score >= 750 and Monthly Income >= $3000.
+OR Credit Score >= 650 and Monthly Income >= $5000.
+OR Credit Score >= 600 and Monthly Income >= $7000.
+
+Output: Prints the credit score, monthly income, and eligibility result directly from this method.
+Main Method:
+
+It handles user input and calls the checkLoanEligibility method with the provided details.
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+4-The program reads the gender and age of a person from the user using the command line argument.
+
+ Method:
+
+name : determineAndPrintEligibility
+returnType : void
+methodType : static
+Parameters:  char gender , int age 
+
+Logic: Determines eligibility based on the given criteria using if-else statements:
+
+For Males: Age should be 21 or above.
+For Females: Age should be 18 or above.
+
+Output: Prints the gender, age, and eligibility result directly from this method.
+
+Main Method:
+
+It handles user input and calls the determineAndPrintEligibility method with the gender and age.
+-----------------------------------------------------------------------------------------------
+5-
+/* write a java program to perform the operation to 
+   find out the grade of the student based on the 
+   marks 
+   [if the marks is between 80 -90 grade A+]
+   [if the marks is between 60 -80 grade A ]
+   [if the marks is between 50 -60 grade B ]
+   [ else 'C']
+
+Input as : 90
+grade as : name of the student and grade as 'A' 
+Class Name : StudentGrade
+> inside this class to create the method to find the grade 
+
+ Method Name : findGrade()
+ Method Type : static
+ Method returnType : void
+ Modifier as : public 
+ Method argument as : 2 paramtere ( String as name , double as marks ) 
+
+> the main method and call the method of 
+  the StudentGrade class.
+ [ take the input from the user with the help of command line argument]
+
+*/

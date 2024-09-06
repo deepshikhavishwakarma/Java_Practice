@@ -1,0 +1,149 @@
+Vehicle Insurance Premium Calculation Based on Vehicle Age and Type
+Classes:
+Vehicle (BLC):
+
+Attributes (all private):
+vehicleType (String) - The type of vehicle ("Car", "Motorcycle", "Truck").
+vehicleAge (int) - The age of the vehicle in years.
+
+Methods:
+setVehicleType(String type): void - Sets the vehicle type.
+setVehicleAge(int age): void - Sets the vehicle age.
+getVehicleType(): String - Returns the vehicle type.
+getVehicleAge(): int - Returns the vehicle age.
+displayDetails(): void - Displays the vehicle's type and age.
+
+InsurancePremium (BLC):
+
+Attributes (all private):
+
+premiumAmount (double) - The calculated insurance premium.
+
+Methods:
+getPremiumAmount(): double - Returns the premium amount.
+calculatePremium(Vehicle vehicle): InsurancePremium - A static method
+that takes a Vehicle object as a parameter and returns an
+InsurancePremium object. The premium is calculated based on
+the vehicleType and vehicleAge.
+
+Logic:
+If the vehicle type is "Car":
+Age < 5 years: Premium = 5% of vehicle value
+Age 5-10 years: Premium = 7% of vehicle value
+Age > 10 years: Premium = 10% of vehicle value
+If the vehicle type is "Motorcycle":
+Age < 3 years: Premium = 3% of vehicle value
+Age 3-8 years: Premium = 5% of vehicle value
+Age > 8 years: Premium = 8% of vehicle value
+If the vehicle type is "Truck":
+Age < 5 years: Premium = 6% of vehicle value
+Age 5-10 years: Premium = 8% of vehicle value
+Age > 10 years: Premium = 12% of vehicle value
+
+VehicleInsuranceTest (ELC):
+In the main method:
+Create an instance of the Vehicle class.
+Set the vehicle type and age using the setter methods.
+Call the displayDetails() method to display the vehicle's details.
+Call the calculatePremium(Vehicle vehicle) method and print the premium amount.
+
+Example:
+Vehicle: Type = "Car", Age = 6 years
+Insurance Premium: 7% of vehicle value
+
+
+Ques 2:
+----------
+Employee Bonus Calculation Based on Performance Rating
+Classes:
+Employee (BLC):
+
+Attributes (all private):
+
+employeeName (String) - The name of the employee.
+basicSalary (double) - The basic salary of the employee.
+performanceRating (int) - The performance rating of the employee (1 to 5).
+
+Methods:
+setEmployeeName(String name): void - Sets the employee's name.
+setBasicSalary(double salary): void - Sets the basic salary.
+setPerformanceRating(int rating): void - Sets the performance rating.
+getEmployeeName(): String - Returns the employee's name.
+getBasicSalary(): double - Returns the basic salary.
+getPerformanceRating(): int - Returns the performance rating.
+displayEmployeeDetails(): void - Displays the employee's details, including their name, basic salary, and performance rating.
+
+Bonus (BLC):
+
+Attributes (all private):
+bonusAmount (double) - The calculated bonus amount.
+
+Methods:
+getBonusAmount(): double - Returns the bonus amount.
+calculateBonus(Employee employee): Bonus - A static method that takes an Employee object as a parameter and returns a Bonus object. The bonus is calculated based on the performanceRating.
+
+Logic:
+Performance Rating 1: Bonus = 5% of basic salary
+Performance Rating 2: Bonus = 10% of basic salary
+Performance Rating 3: Bonus = 15% of basic salary
+Performance Rating 4: Bonus = 20% of basic salary
+Performance Rating 5: Bonus = 25% of basic salary
+
+EmployeeBonusTest (ELC):
+In the main method:
+Create an instance of the Employee class.
+Set the employee's name, basic salary, and performance rating using setter methods.
+Call the displayEmployeeDetails() method to display the employee's details.
+Call the calculateBonus(Employee employee) method and print the bonus amount.
+
+Example:
+Employee: Name = "John Doe", Basic Salary = 50000, Performance Rating = 4
+Bonus Amount: 20% of basic salary
+
+
+Ques - 3
+-------------
+Shipping Fee Calculation Based on Package Weight and Distance
+Classes:
+Package (BLC):
+
+Attributes (all private):
+packageWeight (double) - The weight of the package in kilograms.
+shippingDistance (int) - The distance the package needs to be shipped in kilometers.
+
+Methods:
+setPackageWeight(double weight): void - Sets the package weight.
+setShippingDistance(int distance): void - Sets the shipping distance.
+getPackageWeight(): double - Returns the package weight.
+getShippingDistance(): int - Returns the shipping distance.
+displayPackageDetails(): void - Displays the package's weight and shipping distance.
+
+ShippingFee (BLC):
+Attributes (all private):
+feeAmount (double) - The calculated shipping fee.
+
+Methods:
+getFeeAmount(): double - Returns the fee amount.
+calculateFee(Package pkg): ShippingFee - A static method that takes a Package object as a parameter and returns a ShippingFee object. The fee is calculated based on the packageWeight and shippingDistance.
+
+Logic:
+If packageWeight ≤ 5kg:
+Distance ≤ 100km: Fee = 5
+Distance > 100km: Fee = 10
+If packageWeight > 5kg but ≤ 20kg:
+Distance ≤ 100km: Fee = 10
+Distance > 100km: Fee = 20
+If packageWeight > 20kg:
+Distance ≤ 100km: Fee = 20
+Distance > 100km: Fee = 40
+
+ShippingFeeTest (ELC):
+In the main method:
+Create an instance of the Package class.
+Set the package weight and shipping distance using setter methods.
+Call the displayPackageDetails() method to display the package’s details.
+Call the calculateFee(Package pkg) method and print the fee amount.
+
+Example:
+Package: Weight = 10kg, Distance = 150km
+Shipping Fee: 20

@@ -1,0 +1,118 @@
+Ques
+1
+-----------
+Write a Java program to check whether a number is a Harshad Number or not.
+In recreational mathematics, a harshad number in a given number base, is an integer that is divisible by the sum of its digits when written in that base.
+Example: Number 200 is a Harshad Number because the sum of digits 2 and 0 and 0 is 2(2+0+0) and 200 is divisible by 2. Number 171 is a Harshad Number because the sum of digits 1 and 7 and 1 is 9(1+7+1) and 171 is divisible by 9.
+Create a Class HarsadNumber (BLC)
+methods:
+
+Method name: getSum()
+Parameter: int
+Modifiers: public, static
+return type: int
+Logic: This methods returns the sum of each digit.
+
+Method name: checkHarsad()
+Parameter: int
+Modifiers: public, static
+return type: void
+Logic: This checks and prints the number is harsad number or not a harsad number.
+
+Create a ELC class named TestHarsadNumber, take main method and test the code by taking the input from user.
+Expected Output
+
+Input a number : 353
+
+353 is not a Harshad Number.
+
+Ques
+2
+-----------
+Write a Java program to check if a number is a cube or not.
+In arithmetic and algebra, the cube of a number n is its third power: the result of the number multiplied by itself twice:
+n3 = n × n × n.
+Create a class CheckCube(BLC):
+Method name: getNum()
+Parameter: int
+Modifiers: public, static
+return type: int
+Logic: This methods checks the given parameter is a cube of any number or not, if yes then it returns the num, if the number is not a cube of any number then it returns 0.
+
+Method name: checkCube()
+Parameter: int
+Modifiers: public, static
+return type: void
+Logic: This method calls the getNum() to find out the given number is a cube of any number or not, if the getNum() returns other than 0 then print the ____ Number is a cube of ____ else print "There is no cube of ______"
+
+Create a ELC class named TestCube, take main method and test the code by taking the input from user.
+
+Input Data:
+Input a number: 8
+Expected Output
+
+Number is a cube of 2.
+
+
+Ques
+3
+-----------
+Write a program to check if a number is a Mersenne number or not.
+In mathematics, a Mersenne number is a number that can be written in the form M(n) = 2n − 1 for some integer n.
+The first four Mersenne primes are 3, 7, 31, and 127
+Crea a class MersenneNumber(BLC)
+Method name: checkMersenne()
+Parameter: int
+Modifiers: public, static
+return type: void
+Logic: Check the number is a Mersenne number or not by following above explanation. If yes then print the number is Mersenne number,
+else print Number is not Mersenne Number
+
+Create a ELC class named TestMersenneNumber, take main method and test the code by taking the input from user.
+
+Expected Output
+
+Input a number: 127
+127 is a Mersenne number
+
+Ques
+4
+-----------
+Write a Java program to create the first twenty Hamming numbers.
+In computer science, regular numbers are often called Hamming numbers, Hamming Numbers are numbers whose only prime factors are 2, 3 and 5.
+The first few hamming numbers are :
+1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 27, 30, 32
+Create a class HammingNumber
+
+Method name: isPrime()
+Parameter: int
+Modifiers: public, static
+return type: boolean
+Logic: This method return boolean value based on number is prime or not.
+
+Method name: q                                                                                                                                                                                                                                                                                                                                                                                                                            aw()
+Parameter: -
+Modifiers: public, static
+return type: void
+Logic: This method finds the factorials and checks the factorials are prime or not by calling isPrime(), then if the only prime factors are 2,3,5 then Prints first 20 hamming Numbers.
+
+Create a ELC class named TesthammingNumber, take main method and test the code.
+
+
+Expected Output
+First Twenty Hamming numbers: 1 2 3 4 5 6 8 9 10 12 15 16 18 20 24 25 27 30 32 36
+
+Ques
+5
+-----------
+Write a java program to calculate the power of a given number.
+
+
+Create a class CalculatePower and take main method :
+In main calculate the power of given number, by taking the inputs from command line.
+Example :
+Enter the number: 5
+Enter the exponent: 3
+Output is:
+3 power of 5 is: 125
+3          2

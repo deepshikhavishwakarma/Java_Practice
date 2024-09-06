@@ -1,0 +1,243 @@
+Ques - 1
+-------------
+Car Rental Cost Calculation
+You are creating a CarRental (BLC) class for a car rental service.
+
+The class should have the following attributes:
+private: carModel (String)
+private: rentalDays (int) - the number of days the car is rented.
+private: dailyRate (double) - the rate charged per day.
+The class should calculate the total rental cost and apply a
+discount based on the number of rental days:
+
+Implement below methods:
+
+method name: calculateTotalCost
+modifiers: public
+return type: double
+If rentalDays are greater than 7, apply a 10% discount on the total cost.
+Otherwise, no discount is applied. Return the total rental cost from
+this method.
+
+Implement public setter methods to initialize each of these attributes.
+method name: setCarModel
+parameter: String carModel
+modifiers: public
+return type: void
+This method initializes the carModel attribute.
+
+method name: setRentalDays
+parameter: String rentalDays
+modifiers: public
+return type: void
+This method initializes the rentalDays attributes.
+
+method name: setDailyRate
+parameter: String dailyRate
+modifiers: public
+return type: void
+This method initializes the dailyRate attributes.
+
+Implement public getter methods to retrieve the values of these
+attributes.
+
+Create a ELC class CarRentalCalculator
+Write a main method to:
+Create an instance of the CarRental class.
+Initialize the attributes using setters.
+Calculate and print the total cost using the calculateTotalCost()
+method with car model and rentalDays.
+
+Ques - 2
+-----------
+Employee Performance Evaluation
+You need to create a class that models an Employee in a performance
+evaluation system. The Employee class should have the following
+attributes:
+
+Class name: Employee(BLC)
+Attributes:
+
+private: employeeName (String)
+private: department (String)
+private: baseSalary (double)
+private: performanceScore (int) - a score between 1 and 10 representing
+the employee's performance.
+The performance score affects the employee's bonus. The bonus is calculated as:
+
+Implement below methods:
+
+Method name: calculateBonus()
+return type: double
+modifiers: public
+Logic:
+If the performance score is between 8 and 10, the bonus is 20% of the base salary.
+If the performance score is between 5 and 7, the bonus is 10% of the base salary.
+If the performance score is below 5, there is no bonus.
+After calculating return the bonus.
+
+Implement public setter methods to initialize each of these attributes.
+
+Implement public getter methods to retrieve the values of these attributes
+
+Create an ELC class EmployeeTester
+Write a main method to:
+Create an instance of the Employee class.
+Initialize the attributes using setters.
+Calculate and print the bonus with employee name, department, baseSalary by using getters.
+
+Ques - 3
+--------------
+You are tasked with creating a Book class for a library system. The class should have the following attributes:
+
+class name: Book (BLC)
+
+private: title (String)
+private: author (String)
+private: ISBN (String)
+private: price (double)
+private: discountPercentage (double) - the percentage of discount applied to the book.
+You cannot use constructors for initialization, and you must provide setter methods to initialize the attributes and getter methods to retrieve the values.
+
+Additionally, implement a method to calculate the final price of the book after applying the discount.
+
+Implement below methods:
+
+Implement public setter methods to initialize each of these attributes.
+Implement public getter methods to retrieve the values of these attributes.
+
+Add a method getFinalPrice() that calculates and returns the price of the book after applying the discount:
+method name: getFinalPrice()
+return type: double
+modifier: public
+Logic:
+finalPrice = price - (price * discountPercentage / 100)
+
+Create an ELC class BookTester,
+Write a main method where you:
+Create an instance of the Book class.
+Use the setter methods to initialize the attributes of the book.
+Calculate the final price using the getFinalPrice() method.
+Print the details of the book, including the final price.
+
+Ques - 4
+-------------
+Determining Card Type Based on Customer Spending
+You are tasked with creating a system where a customer's spending determines their credit card type. The system involves two classes: Customer and CardType.
+
+Classes:
+Customer (BLC):
+
+Attributes:
+private: customerName (String) - The name of the customer.
+private: monthlySpending (double) - The total amount spent by the customer in a month.
+
+Methods:
+setCustomerName(String name) - Sets the customer's name.
+setMonthlySpending(double spending) - Sets the customer's monthly spending.
+getCustomerName() - Returns the customer's name.
+getMonthlySpending() - Returns the customer's monthly spending.
+displayDetails() - Displays the customer’s details, including their name, monthly spending.
+
+create another BLC class CardType:
+
+Attributes:
+private: cardName (String) - The name of the card ("Silver", "Gold", or "Platinum").
+Methods:
+getCardName()- returns the cardName.
+getCardTypes(Customer customer) - A static method that takes a Customer
+object as a parameter and returns a CardType object. This method should
+initialize the cardName attribute based on the monthlySpending of the
+customer, without using a constructor.
+Spending < 10000: Silver
+Spending 10000 - 50000: Gold
+Spending > 50000: Platinum
+
+Create an ELC class CustomerTester
+In main Method:
+
+Create an instance of the Customer class.
+Set the customer's name and monthly spending using the setter methods.
+Call the displayDetails() method to display the customer’s details.
+Call the getCardTypes() method by sending an object of customer and print the card name.
+
+Example:
+Customer 1: Name: "John Doe", Monthly Spending: 7000
+Card Type: Silver
+
+Customer 2: Name: "Jane Smith", Monthly Spending:28000
+Card Type: Gold
+
+Customer 3: Name: "Alice Brown", Monthly Spending: 120000
+Card Type: Platinum
+
+Ques - 5
+-----------
+Membership Benefits Based on Customer Spending with Discount Application:
+You are tasked with creating a system to determine discounts for products based on the total purchase amount and membership status of a user. The system involves two classes: User and Discount.
+
+Classes:
+class User (BLC):
+
+Attributes (all are private):
+userName (String) - The name of the user.
+purchaseAmount (double) - The total amount spent by the user on a purchase.
+membershipStatus (String) - The membership status of the user ("Regular", "Silver", "Gold").
+
+Methods:
+setUserName(String name): void - Sets the user's name.
+setPurchaseAmount(double amount): void - Sets the total purchase amount.
+setMembershipStatus(String status): void - Sets the membership status.
+getUserName(): String - Returns the user's name.
+getPurchaseAmount(): double - Returns the total purchase amount.
+getMembershipStatus(): String - Returns the membership status.
+
+displayDiscount(): void - Displays the user's name, purchase amount.
+
+applyDiscount(Discount discount) - Calculates and prints the final price and discount  %, after applying the discount.
+
+class Discount (BLC):
+
+Attributes (all are private):
+discountPercentage (double) - The percentage of discount applied.
+
+Methods:
+getDiscountPercentage() - Returns the discount percentage.
+getDiscount(User user) - A static method that takes a User object as a parameter and returns a Discount object. This method should initialize the discountPercentage attribute based on the user's purchaseAmount and membershipStatus.
+Logic:
+If the user’s membership status is "Regular":
+If the purchase amount is less than 100, set the discount percentage to 5.0%.
+If the purchase amount is between 100 and 500 (inclusive), set the discount percentage to 10.0%.
+If the purchase amount is greater than 500, set the discount percentage to 15.0%.
+
+If the user’s membership status is "Silver":
+If the purchase amount is less than 100, set the discount percentage to 10.0%.
+If the purchase amount is between 100 and 500 (inclusive), set the discount percentage to 15.0%.
+If the purchase amount is greater than 500, set the discount percentage to 20.0%.
+
+If the user’s membership status is "Gold":
+If the purchase amount is less than 100, set the discount percentage to 15.0%.
+If the purchase amount is between 100 and 500 (inclusive), set the discount percentage to 20.0%.
+If the purchase amount is greater than 500, set the discount percentage to 25.0%.
+
+Create an ELC class UserTest:
+In Main Method:
+
+Create an instance of the User class.
+Set the user's name, purchase amount, and membership status using setter methods.
+Call the displayDiscount() method to display the user's details along with the calculated discount.
+Call the getDiscount(User user) method to get the Discount object with discountPercentage, by passing User object.
+Call the applyDiscount(Discount) method to display the final price after applying the discount.
+
+Example Ouput:
+User 1: Name: "Alice", Purchase Amount: 150, Membership Status: "Silver"
+Discount: 15%
+Final Price: 127.50
+
+User 2: Name: "Bob", Purchase Amount: 600, Membership Status: "Gold"
+Discount: 25
+Final Price: 450.00
+
+User 3: Name: "Charlie", Purchase Amount: $80, Membership Status: "Regular"
+Discount: 5%
+Final Price: 76.00

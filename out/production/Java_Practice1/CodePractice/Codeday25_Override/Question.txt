@@ -1,0 +1,63 @@
+The payroll system of an organization involves calculating the gross salary of each type of employee and the tax applicable to each.
+
+Note : Take parameterized constructor to initialize all fields.
+
+Create the following BLC classes as described below.
+class Employee:
+Fields: employeeName: String, employeeId: int: basicSlary: double, HRAPer: double, DAPer: double
+public method: calculateGrossSalary() - return a double as 0.0.
+
+Employee class Have below 4 subclasses.
+
+Class Developer
+Override calculateGrossSalary
+Public Method: calculateGrossSalary() - returns a double
+Calculate the gross salary as : basicSalary +HRAPer +DAPer
+
+Override toString() from object class.
+
+Class Manager
+Fields: double, projectAllowance: double
+
+Override calculateGrossSalary
+public Method: calculateGrossSalary() - returns a double
+Calculate the gross salary as : basicSalary +HRAPer +DAPer + projectAllowance
+
+Override toString() from object class.
+
+Class Trainer
+Fields: double, batchCount: int, perkPerBatch: double
+
+Override calculateGrossSalary
+public Method: calculateGrossSalary() - returns a double
+Calculate the gross salary as : basicSalary +HRAPer +DAPer +(batchCount * perkPerBatch)
+
+Override toString() from object class.
+
+Class Sourcing
+Fields: double, enrollmentTarget: int, enrollmentReached: int, perkPerEnrollment: double
+
+Override calculateGrossSalary
+Public Method: calculateGrossSalary() - returns a double
+Calculate the gross salary as : basicSalary +HRAPer +DAPer +(((enrollmentReached/enrollmentTarget)*100)*perkPerEnrollment).
+
+Override toString() from object class.
+
+
+Class TaxUtil
+Fields: None
+
+Public Methods:
+calculateTax(Developer d) - returns a double
+calculateTax(Manager m) - returns a double
+calculateTax(Trainer t) - returns a double
+calculateTax(Sourcing s) - returns a double
+
+
+Tax Calculation Logic: If gross salary is greater than 50000 tax is 20% else, tax is 5%.
+
+An ELC class TaxCalculation is given to you with the main Method. Use this class to test your solution.
+
+
+[Note after developing the above program now try to convert the code in loosely coupled and runtime polymorphism by taking one parameter of Employee type(Super class as an parameter)]
+Develop only one method in TaxUtil : calculateTax(Employee e) - return double.

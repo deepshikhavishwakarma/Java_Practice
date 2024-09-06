@@ -1,0 +1,195 @@
+1. Printing 1..n numbers.
+
+2. NUMBER to text conversion: 
+
+3. Given a 0-indexed integer array nums, find a 0-indexed integer array answer where:
+
+answer.length == nums.length.
+answer[i] = |leftSum[i] - rightSum[i]|.
+Where:
+
+leftSum[i] is the sum of elements to the left of the index i in the array nums. If there is no such element, leftSum[i] = 0.
+rightSum[i] is the sum of elements to the right of the index i in the array nums. If there is no such element, rightSum[i] = 0.
+Return the array answer.
+
+ 
+
+Example 1:
+
+Input: nums = [10,4,8,3]
+Output: [15,1,11,22]
+Explanation: The array leftSum is [0,10,14,22] and the array rightSum is [15,11,3,0].
+The array answer is [|0 - 15|,|10 - 11|,|14 - 3|,|22 - 0|] = [15,1,11,22].
+Example 2:
+
+Input: nums = [1]
+Output: [0]
+Explanation: The array leftSum is [0] and the array rightSum is [0].
+The array answer is [|0 - 0|] = [0].
+
+----------------------------------------------------------------------------------------------------------
+ 4.  Finding lcm of given two numbers:
+ using gcd
+
+-----------------------------------------------------------------------------------------------------------
+5.Prime
+Write a java program to check the number is the prime number or not?
+[ Take the number as per you own choice and print the result by writing 
+   the proper code by using if else and while loop]
+Sample Input
+Input 1 :
+|- Number = 5
+
+Input 2:
+|- Number = 8
+Sample Output
+Output 1 :
+|- The number is the prime number 
+
+Output 2 :
+|- The number is the not a prime number 
+
+
+----------------------------------------------------------------------------------------------
+5. Program01
+Create a class named Program01.
+
+In the Program01 class, declare the following instance variables with the specified values:
+An int variable a with a value of 10.
+A byte variable b1 with a value of 4.
+A short variable s1 with a value of 5.
+A long variable l1 with a value of 45l.
+A float variable f1 with a value of 5.6f.
+A double variable d1 with a value of 6.7d.
+A char variable ch1 with a value of 'a'.
+A boolean variable b2 with a value of false.
+
+Create a main method within the Program01 class that performs the following actions:
+Instantiate an object of the Program01 class.
+Retrieve the values of all the instance variables and store them in local variables.
+Print the values of these local variables in a single line, separated by spaces.
+Also print the value without storing it in the local variable.
+Sample Input
+-
+Sample Output
+Example Output
+The output of the program should be:
+10 4 5 45 5.6 6.7 a false
+
+---------------------------------------------------------------------------------------------------------
+6. Find Prime Number upto given number by using for loop?
+input: n=10.
+Output:-2,3,5,7
+
+---------------------------------------------------------------------------------------------------------
+7. Write a java program to print multiplication table from 2 to 5 by using for loop?
+input: 5
+---------------------------------------------------------------------------------------------------------
+8. Write a java program to print Fibonacci Series.
+input-5
+output- 0 1 1 2 3
+
+------------------------------------------------------------------------------------------------------------
+9. Write a java program to count the number of digit and it's sum of the given number
+
+input - 12345
+Output 
+no of digit - 5
+Sum of digit - 15
+
+---------------------------------------------------------------------------------------------------------------
+
+10. Finding Armstrong no or not?
+1 to 9 , 153, 370, 371, 407, 1634, 8208
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% package CodePractice.Codeday4_Loops;
+
+% import java.util.*;
+
+% public class TextConversion {
+
+%   static void textConvert(int num) {
+%     int rem, s = 0;
+%     while (num != 0) {
+%       rem = num % 10;
+%       s = s * 10 + rem;
+%       num /= 10;
+%     }
+%     System.out.println(s);
+%     while (s != 0) {
+%       rem = s % 10;
+%       switch (s) {
+%         case 0:
+%           System.out.println("Zero");
+%           break;
+%         case 1:
+%           System.out.println("One");
+%           break;
+%         case 2:
+%           System.out.println("Two");
+%           break;
+%         case 3:
+%           System.out.println("Three");
+%           break;
+%         case 4:
+%           System.out.println("Four");
+%           break;
+%         case 5:
+%           System.out.println("Five");
+%           break;
+%         case 6:
+%           System.out.println("Six");
+%           break;
+%         case 7:
+%           System.out.println("Seven");
+%           break;
+%         case 8:
+%           System.out.println("Eight");
+%           break;
+%         case 9:
+%           System.out.println("Nine");
+%           break;
+%         case 10:
+%           System.out.println("Ten");
+%           break;
+%         case 11:
+%           System.out.println("Eleven");
+%           break;
+%         case 12:
+%           System.out.println("Twelve");
+
+%       }
+%       s /= 10;
+%     }
+%   }
+
+%   public static void main(String[] args) {
+%     Scanner sc = new Scanner(System.in);
+%     System.out.println("Enter your number");
+%     int n = sc.nextInt();
+%     TextConversion.textConvert(n);
+%     sc.close();
+%   }
+% }
